@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0px; 
+}
+
+.header {
+    background-color: #cfc ;
+    border: 1px solid green;
+    height: 100vh;
+    width:  100%;
+    display: inline-block;
+}
+
+.banner {
+    display: inline-block;
+    background-color: pink;
+    height: 24vh;
+    width: 100%;
+    position: relative;
+}
+
+.navigation {
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    font-size: 11px;
+}
+
+.slideshow {
+    display: inline-block;
+    background-color: blue;
+    height: 76vh;
+    width: 100%;
+}
+
+.content {
+    background-color: purple ;
+    border: 1px solid purple;
+    height: 40%;
+    padding: 10%;
+    width: 100%;
+    display: inline-block
+}
+
+.footer {
+    background-color: red ;
+    border: 1px solid red;
+    height: 40%;
+    padding: 10%;
+    width: 100%;
+}
