@@ -2,34 +2,83 @@
     box-sizing: border-box;
 }
 
+/*centers the image provided with this class*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/*sets for no spacing between the different sections of the pages*/
 html {
     font-size: 0px; 
 }
 
+/*styling for Navigation Bar*/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #0f0f0f;
+    overflow: hidden;
+    position: absolute;
+    margin:4vh;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 6vh 6vh;
+    text-decoration: none;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    text-decoration: #E987F5;
+    color: #E987F5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #E987F5;
+    color: white;
+  }
+
+/*styling for the header which holds the banner and navagtion*/
 .header {
-    background-color: #cfc ;
-    border: 1px solid green;
-    height: 100vh;
+    background-color:#0f0f0f;
     width:  100%;
     display: inline-block;
 }
 
+/* styling for the banner which is the Annika Marriner Photography logo*/
 .banner {
     display: inline-block;
-    background-color: pink;
-    height: 24vh;
+    background-color: #0f0f0f;
+    height: 30vh;
     width: 100%;
     position: relative;
 }
 
+/*gives the logo img a height of 22vh*/
+img{
+    height:25vh;
+}
+
+/*styling for navagtion which appears under the banner*/
 .navigation {
-    height: 5vh;
+    height: 10vh;
     width: 100%;
     position: absolute;
     bottom: 0px;
     font-size: 11px;
 }
 
+/*styling for slideshow which appears at top of home page*/
 .slideshow {
     display: inline-block;
     background-color: blue;
@@ -37,19 +86,28 @@ html {
     width: 100%;
 }
 
+/*styling for the content which appears in the middle of pages*/
 .content {
     background-color: purple ;
     border: 1px solid purple;
-    height: 40%;
-    padding: 10%;
+    height: 100vh;
     width: 100%;
     display: inline-block
 }
 
+/*styling for the footer - appears at bottoms of each page*/
 .footer {
-    background-color: red ;
-    border: 1px solid red;
-    height: 40%;
-    padding: 10%;
+    background-color: black ;
+    border: 1px solid black;
+    height: 25vh;
+    width: 100%;
+}
+
+/*styling for intro at top of pages*/
+
+.intro-ourwork {
+    display: inline-block;
+    background-color: red;
+    height: 60vh;
     width: 100%;
 }
