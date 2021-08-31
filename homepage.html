@@ -7,13 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="photography.css">
+        
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="header">
                 <div class="banner"> 
-                    <a href="homepage.html">
-                        <img src="/AMlogo.png" alt="Annika Marriner Photography Logo" class="center"></a>
+                    <!-- <a href="homepage.html">
+                        <img src="images/AMlogo.png" alt="Annika Marriner Photography Logo" class="center">
+                    </a> -->
                         
                     <div class="navigation">
                         <div class="topnav">
@@ -27,10 +29,27 @@
                     </div>
                 </div>
                 <div class="slideshow">
-
+                    <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/slideshow0.JPG" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/slideshow1.JPG" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/slideshow2.JPG" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div><!-- No spaces
-         --><div class="content">
+         --><div class="content"> 
 
 
             </div>
