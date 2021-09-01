@@ -62,7 +62,7 @@ html {
     height: 24vh;
     width: 100%;
     position: relative;
-    background-image: url("images/AMlogo.png");
+    background-image: url("images/AMlogotransparent.png");
     background-repeat: no-repeat;
     background-position:center top;
 }
@@ -87,8 +87,6 @@ html {
 
 /*styling for the content which appears in the middle of pages*/
 .content {
-    background-color: purple ;
-    border: 1px solid purple;
     height: 100vh;
     width: 100%;
     display: inline-block
@@ -109,4 +107,8 @@ html {
     background-color: red;
     height: 60vh;
     width: 100%;
+}
+
+.getintouch-button{
+    background-color:#E987F5;
 }

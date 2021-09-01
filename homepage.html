@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!--links to bootstrap in order to include the server in my coding-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,11 @@
     </head>
     <body>
         <div class="container-fluid">
+            <div class="app">
+    
             <div class="header">
                 <div class="banner"> 
-                    <!-- <a href="homepage.html">
-                        <img src="images/AMlogo.png" alt="Annika Marriner Photography Logo" class="center">
-                    </a> -->
-                        
+                <!--creating Navigation bar and linking them to appropriate pages-->
                     <div class="navigation">
                         <div class="topnav">
                             <a  href="homepage.html">Home</a>
@@ -28,7 +28,9 @@
                           </div>
                     </div>
                 </div>
+                <!--coding for slideshow noted at the beginning of the slideshow page-->
                 <div class="slideshow">
+                    <!--Bootstrap Carousel-->
                     <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -36,6 +38,7 @@
                           <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
+                            <!--adds the appropriate images into the slideshow-->
                           <div class="carousel-item active">
                             <img src="images/slideshow0.JPG" class="d-block w-100" alt="...">
                           </div>
@@ -49,15 +52,22 @@
                       </div>
                 </div>
             </div><!-- No spaces
-         --><div class="content"> 
-
-
+         --><!--creating content part of the homepage-->
+         <div class="content"> 
+             <h2>Text</h2>
+                 <!--The button is inside a <div> with col-md-4 and col-lg-2 classes. 
+                     This means the <div> will span 12/12 (100%) of its container by default, 
+                    4/12 (1/3) of its container on medium screens, and 2/12 (1/6) of its container on large screens.-->
+                <div class="col-md-4 col-lg-2">
+                  <button class="getintouch-button">Get in Touch</button>
+                </div>
             </div>
 
             <div class="footer">
 
-
             </div>
+            </div>
+
 
 
         </div>
