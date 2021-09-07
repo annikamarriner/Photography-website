@@ -15,13 +15,14 @@ html {
     font-size: 0px; 
 }
 
+
 /*styling for Navigation Bar*/
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #0f0f0f;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: absolute;
-    margin:4vh 0;
+    margin:auto;
   }
   
   /* Style the links inside the navigation bar */
@@ -29,7 +30,7 @@ html {
     float: center;
     color: #f2f2f2;
     text-align: center;
-    padding: 6vh 4vw;
+    padding: 0 4vw;
     text-decoration: none;
     font-size: 3vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +48,15 @@ html {
     background-color: #E987F5;
     color: white;
   }
+
+  /* creates the styling for the drop down of Our Work in the Nav Bar*/
+  dropdown:hover .dropdown-menu {
+    display: block;
+ }
+ 
+ .dropdown .dropdown-toggle {
+   background-color: #0f0f0f;
+ }
 
 /*styling for the header which holds the banner and navagtion*/
 .header {
@@ -70,11 +80,25 @@ html {
 
 /*styling for navagtion which appears under the banner*/
 .navigation {
-    height: 10vh;
+    height: 2em;
     width: 100%;
     position: absolute;
     bottom: 0px;
     font-size: 11px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.dropdown{
+    display:inline-block;
+}
+.dropdown:hover .dropdown-menu{
+    display:block;
 }
 
 /*styling for slideshow which appears at top of home page*/
@@ -87,28 +111,276 @@ html {
 
 /*styling for the content which appears in the middle of pages*/
 .content {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     display: inline-block
 }
 
-/*styling for the footer - appears at bottoms of each page*/
-.footer {
-    background-color: black ;
-    border: 1px solid black;
-    height: 25vh;
-    width: 100%;
+/*styles for the h2 heading on the homepage*/
+h2{
+    font-size: 10vh;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;/*centers this heading on the homepage*/
+    margin-top:7vh;
 }
 
-/*styling for intro at top of pages*/
-
-.intro-ourwork {
-    display: inline-block;
-    background-color: red;
-    height: 60vh;
-    width: 100%;
+/*styles the h1 heading on the homepage*/
+h1{
+    font-size:6vh;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;/*centeres this heading on the homepage*/
+    margin-top:2vh;
 }
 
+/*styling for the getin touch button which appears on the homepage*/
 .getintouch-button{
     background-color:#E987F5;
+    height:15vh;
+    width:27vw;
+    font-size:5vh;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:10px;/*curves the edges of the button to fit the design*/
+    margin-top: 15vh;
+    border-width:0;
+    padding:0.8em 1.5em;
+    justify-content:center;/*centers the button on the html page*/
+    
+}
+
+/*styles for the get in touch button noted on the homepage when the use hovers over it */
+.getintouch-button :hover{
+    color:black;
+}
+
+.getintouch-button a{
+    text-decoration: none;
+    color:white;
+}
+
+/*creates the styling for the footer*/
+.header, .content, .footer {
+    width: 100%;
+  }
+
+  .footer-homepage {
+    height: 17vh;
+    background: black;
+  }
+  
+  .footer-ourcustomers{
+      height:17vh;
+      background:black;
+      margin-top:30vh;
+  }
+
+  .footer-ourwork{
+      height:17vh;
+      background:black;
+      margin-top:30vh;
+  }
+
+  .footer-aboutannika{
+    height:17vh;
+    background:black;
+    margin-top:60vh;
+}
+
+  /*creates the styling for the contact third of the footer*/
+  .contactus-footer {
+    background: black;
+    font-size: 3vh;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:2vh;
+    color:white;
+    text-decoration:none;
+  }
+
+  .contactus-footer :link{
+      color:white;
+      text-decoration:none;
+  }
+
+  .contactus-footer a:hover{
+      color:rgb(204, 90, 204);
+  }
+
+
+  /*creates the styling for the about third of the footer*/
+  .about-footer {
+    background: black;
+    font-size:3vh;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:2vh;
+    color:white;
+    text-decoration:none;
+  }
+
+  .about-footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.about-footer a:hover{
+    color:rgb(204, 90, 204);
+}
+
+/*creates the styling for the social media third of the footer*/
+  .socialmedia-footer {
+    background: black;
+    font-size:3vh;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:2vh;
+    color:white;
+    text-decoration:none;
+  }
+
+  /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .footer-options {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:2vh;
+  }
+
+
+
+  /*Our Work page styling*/
+
+  /*this section appears at the top of the majority of pages*/
+  .text_heading{
+    display: inline-block;
+    height: 30vh;
+    width: 100%;
+  }
+
+  .heading-text{
+    font-size: 7vh;
+    text-align: left;
+    color:#E987F5;
+    margin-left:25vh;
+    margin-top:5vh;
+    font-family:Arial, Helvetica, sans-serif;
+    /*If required*/
+    overflow:hidden
+  }
+
+  .sub-heading{
+      font-size:3.5vh;
+      text-align:left;
+      color:rgb(78, 76, 76);
+      margin-left:25vh;
+      font-family:Arial, Helvetica, sans-serif;
+  }
+
+/*styling for the images appearing on the our work page*/
+.first-row img{
+    height:40vh;
+    text-align: left;
+    margin-top:10vh;
+    margin-left:5vw;
+}
+
+.second-row img{
+    height:40vh;
+    float:right;
+    margin-right:5vw;
+}
+
+.third-row img{
+    height:40vh;
+    text-align:left;
+    margin-left:5vw;
+    margin-top:38vh;
+}
+
+.fourth-row img{
+    height:40vh;
+    float:right;
+    margin-right:5vw;
+}
+
+/*css styling for the button appearing at the bottom of the our work page*/
+.ourwork_btn{
+    background-color:#E987F5;
+    height:15vh;
+    width:27vw;
+    font-size:5vh;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:10px;/*curves the edges of the button to fit the design*/
+    margin-top: 20vh;
+    margin-right:68vw;
+    border-width:0;
+}
+
+/*removes the default underline for links*/
+.ourwork_btn a{
+    color:white;
+    text-decoration:none;
+}
+
+/*allows for the button to change text color when the user hovers over the item*/
+.ourwork_btn a:hover{
+    color:black;
+}
+
+
+/*css styling for our customers page*/
+/*styling for slideshow which appears in the middle of the our customers*/
+.slideshow-ourcustomers {
+    display: inline-block;
+    background-color: blue;
+    height: 2vh;
+    width: 100%;
+}
+
+
+
+.content-ourcustomers{
+    height:10vh;
+    width:100%;
+    color:darkorange;
+    margin-bottom:90vh;
+}
+
+
+
+/*css styling for contact us page*/
+.hero-image{
+    height:70vh;
+    width:100%;
+    background-color:pink;
+}
+
+.hero-image img{
+    height:70vh;
+    width:100%;
+
 }
