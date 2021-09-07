@@ -1,47 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="photography.css">
-        
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="banner"> 
-                    <a href="homepage.html">
-                        <img src="/AMlogo.png" alt="Annika Marriner Photography Logo" class="center"></a>
-                    
-                    <div class="navigation">
-                        <div class="topnav">
-                            <a  href="homepage.html">Home</a>
-                            <a href="ourwork.html">Our Work</a>
-                            <a href="ourcustomers.html">Our Customer</a>
-                            <a href="about-annika.html">About Annika</a>
-                            <a href="pricing.html">Pricing</a>
-                            <a href="contact-us.html">Contact Us</a>
-                          </div>
-                    </div>
-                </div>
-                </div>
-                <div class="intro"></div>
-            </div><!-- No spaces
-         --><div class="content">
 
+<head>
+  <!--links to bootstrap in order to include the server in my coding-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="photography.css">
 
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="app">
+      <div class="header">
+<div class="banner_nav sticky-top">
+        <div class="banner">
+          <!--creating Navigation bar and linking them to appropriate pages-->
+          <div class="navigation">
+            <div class="topnav">
+              <a href="homepage.html">Home</a>
+              <a href="ourwork.html">Our Work</a>
+              <a href="ourcustomers.html">Our Customer</a>
+              <a href="about-annika.html">About Annika</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="contact-us.html">Contact Us</a>
             </div>
+          </div>
+        </div>
+      </div>
+      </div>
 
-            <div class="footer">
-
-
+ <!-- content section html -->
+ <div class="text_heading">
+   
+    <div class="heading-text">
+        Our Customers
+       </div>
+       <div class="sub-heading">
+           Our client base reaches a wide range of different people. Here at Annika Marriner <br>
+           Photography our aim is to satisfy every customer with pictures that will last a lifetime. 
+        </div>
+    </div>
+      <!--creating content part of the homepage-->
+      <div class="content-ourcustomers">
+        <div class="slideshow-ourcustomers">
+            <!--Bootstrap Carousel-->
+            <div id="slideshow-ourcustomers" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slideshow-ourcustomers" data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slideshow-ourcustomers" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slideshow-ourcustomers" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner"> -->
+                <!--adds the appropriate images into the slideshow-->
+                <div class="carousel-item active">
+                  <img src="images/slide0.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide2.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              
             </div>
-
+          </div>
 
         </div>
-        
-    </body>
+
+
+
+<!--footer html section-->
+        <div class="footer-ourcustomers row">
+          <div class="contactus-footer col">Contact us
+          <div class="footer-options">
+            Phone Number: <a href="tel:+64 276-780-011">+64-276-780-011</a>
+            <br>
+            Email: <a href="mailto:annikamarriner@shcs.school.nz">annikamarriner@shcs.school.nz</a><br>          
+          </div>
+        </div>
+
+
+        <div class="about-footer col">About 
+          <div class="footer-options">
+            <a href="about-annika.html">About Annika Page</a>
+            <br>
+            <a href="termscondition.html">Terms & Conditions</a>      
+            <br>
+            <a href="FAQ.html">Frequently asked questions</a>         
+          </div>
+        </div>
+
+
+    
+        <div class="socialmedia-footer col">Social Media
+          <div class="footer-options">
+    
+          </div>
+        </div>
+
+      </div>
+   
+
+    <!-- JS for VUE and Airtable -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"> </script>
+    <!--allows us to display and get data from airtable-->
+    <script src="https://cdn.jsdelivr.net/nmp/vue@2.5.13/dist/vue.js"></script>
+    <!--allows us to display dynamic data easily-->
+
+    <!--Custome JS for VUE -->
+    <script src="main_vue_filters.js"></script>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+
 </html>
