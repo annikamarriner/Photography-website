@@ -2,104 +2,260 @@
     box-sizing: border-box;
 }
 
+
+
+/*responsive css styling*/
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+
+/*styling for all pages*/
 /*centers the image provided with this class*/
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /*sets for no spacing between the different sections of the pages*/
 html {
-    font-size: 0px; 
+  font-size: 0px; 
 }
+
+
+
+
 
 
 /*styling for Navigation Bar*/
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #0f0f0f;
-    /* overflow: hidden; */
-    position: absolute;
-    margin:auto;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: center;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0 4vw;
-    text-decoration: none;
-    font-size: 3vh;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    text-decoration: #E987F5;
-    color: #E987F5;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #E987F5;
-    color: white;
-  }
+  background-color: #0f0f0f;
+  /* overflow: hidden; */
+  position: absolute;
+  margin:auto;
+}
 
-  /* creates the styling for the drop down of Our Work in the Nav Bar*/
-  dropdown:hover .dropdown-menu {
-    display: block;
- }
- 
- .dropdown .dropdown-toggle {
-   background-color: #0f0f0f;
- }
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0 4vw;
+  text-decoration: none;
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  text-decoration: #E987F5;
+  color: #E987F5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #E987F5;
+  color: white;
+}
+
+/* creates the styling for the drop down of Our Work in the Nav Bar*/
+dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown .dropdown-toggle {
+ background-color: #0f0f0f;
+}
 
 /*styling for the header which holds the banner and navagtion*/
 .header {
-    background-color:#0f0f0f;
-    width:  100%;
-    display: inline-block;
+  background-color:#0f0f0f;
+  width:  100%;
+  display: inline-block;
 }
 
 /* styling for the banner which is the Annika Marriner Photography logo*/
 .banner {
-    display: inline-block;
-    background-color: #100F10;
-    height: 24vh;
-    width: 100%;
-    position: relative;
-    background-image: url("images/AMlogotransparent.png");
-    background-repeat: no-repeat;
-    background-position:center top;
+  display: inline-block;
+  background-color: #100F10;
+  height: 24vh;
+  width: 100%;
+  position: relative;
+  background-image: url("images/AMlogotransparent.png");
+  background-repeat: no-repeat;
+  background-position:center top;
 }
 
 
 /*styling for navagtion which appears under the banner*/
 .navigation {
-    height: 4.5em;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    font-size: 11px;
+  height: 4.5em;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  font-size: 11px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 .dropdown{
-    display:inline-block;
+  display:inline-block;
 }
 .dropdown:hover .dropdown-menu{
-    display:block;
+  display:block;
+  background-color:white;
+  border-radius:25px;
 }
+
+.dropdown-menu .dropdown-item {
+  color:black;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius:25px;
+}
+
+
+
+
+
+/*Styling for footer*/
+/*creates the styling for the footer*/
+.header, .content, .footer {
+  width: 100%;
+}
+
+.footer-homepage {
+  height: 17vh;
+  background: black;
+}
+
+.footer-ourcustomers{
+    height: 17vh;
+    background:black;
+    margin-top: 30vh;
+}
+
+.footer-ourwork{
+    height: 17vh;
+    background:black;
+    margin-top: 30vh;
+}
+
+.footer-aboutannika{
+  height: 17vh;
+  background:black;
+  margin-top: 60vh;
+}
+
+/*creates the styling for the contact third of the footer*/
+.contactus-footer {
+  background: black;
+  font-size: 3vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:2vh;
+  color:white;
+  text-decoration: none;
+}
+
+.contactus-footer :link{
+    color:white;
+    text-decoration: none;
+}
+
+.contactus-footer a:hover{
+    color:rgb(204, 90, 204);
+}
+
+
+/*creates the styling for the about third of the footer*/
+.about-footer {
+  background: black;
+  font-size: 3vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2vh;
+  color:white;
+  text-decoration: none;
+}
+
+.about-footer a{
+  color:white;
+  text-decoration: none;
+}
+
+.about-footer a:hover{
+  color:rgb(204, 90, 204);
+}
+
+/*creates the styling for the social media third of the footer*/
+.socialmedia-footer {
+  background: black;
+  font-size: 3vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2vh;
+  color:white;
+  text-decoration: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.footer-options {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+
+
+
+
+
+
+/*styling for HOMEPAGE */
 
 /*styling for slideshow which appears at top of home page*/
 .slideshow {
@@ -157,118 +313,9 @@ h1{
     color:white;
 }
 
-/*creates the styling for the footer*/
-.header, .content, .footer {
-    width: 100%;
-  }
-
-  .footer-homepage {
-    height: 17vh;
-    background: black;
-  }
-  
-  .footer-ourcustomers{
-      height:17vh;
-      background:black;
-      margin-top:30vh;
-  }
-
-  .footer-ourwork{
-      height:17vh;
-      background:black;
-      margin-top:30vh;
-  }
-
-  .footer-aboutannika{
-    height:17vh;
-    background:black;
-    margin-top:60vh;
-}
-
-  /*creates the styling for the contact third of the footer*/
-  .contactus-footer {
-    background: black;
-    font-size: 3vh;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top:2vh;
-    color:white;
-    text-decoration:none;
-  }
-
-  .contactus-footer :link{
-      color:white;
-      text-decoration:none;
-  }
-
-  .contactus-footer a:hover{
-      color:rgb(204, 90, 204);
-  }
 
 
-  /*creates the styling for the about third of the footer*/
-  .about-footer {
-    background: black;
-    font-size:3vh;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top:2vh;
-    color:white;
-    text-decoration:none;
-  }
 
-  .about-footer a{
-    color:white;
-    text-decoration:none;
-}
-
-.about-footer a:hover{
-    color:rgb(204, 90, 204);
-}
-
-/*creates the styling for the social media third of the footer*/
-  .socialmedia-footer {
-    background: black;
-    font-size:3vh;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top:2vh;
-    color:white;
-    text-decoration:none;
-  }
-
-  /* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .footer-options {
-      font-family:Arial, Helvetica, sans-serif;
-      font-size:2vh;
-  }
 
 
 
@@ -285,59 +332,59 @@ h1{
     font-size: 7vh;
     text-align: left;
     color:#E987F5;
-    margin-left:25vh;
-    margin-top:5vh;
-    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 25vh;
+    margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
     /*If required*/
-    overflow:hidden
+    overflow: hidden
   }
 
   .sub-heading{
-      font-size:3.5vh;
-      text-align:left;
+      font-size: 3.5vh;
+      text-align: left;
       color:rgb(78, 76, 76);
-      margin-left:25vh;
-      font-family:Arial, Helvetica, sans-serif;
+      margin-left: 25vh;
+      font-family: Arial, Helvetica, sans-serif;
   }
 
 /*styling for the images appearing on the our work page*/
 .first-row img{
-    height:40vh;
+    height: 40vh;
     text-align: left;
-    margin-top:10vh;
-    margin-left:5vw;
+    margin-top: 10vh;
+    margin-left: 5vw;
 }
 
 .second-row img{
-    height:40vh;
-    float:right;
-    margin-right:5vw;
+    height: 40vh;
+    float: right;
+    margin-right: 5vw;
 }
 
 .third-row img{
-    height:40vh;
-    text-align:left;
-    margin-left:5vw;
-    margin-top:38vh;
+    height: 40vh;
+    text-align: left;
+    margin-left: 5vw;
+    margin-top: 38vh;
 }
 
 .fourth-row img{
-    height:40vh;
-    float:right;
-    margin-right:5vw;
+    height: 40vh;
+    float: right;
+    margin-right: 5vw;
 }
 
 /*css styling for the button appearing at the bottom of the our work page*/
 .ourwork_btn{
     background-color:#E987F5;
-    height:15vh;
-    width:27vw;
-    font-size:5vh;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius:10px;/*curves the edges of the button to fit the design*/
-    margin-top: 20vh;
-    margin-right:68vw;
-    border-width:0;
+    height: 15vh;
+    width: 27vw;
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;/*curves the edges of the button to fit the design*/
+    margin-top:  20vh;
+    margin-right: 68vw;
+    border-width: 0;
 }
 
 /*removes the default underline for links*/
@@ -350,6 +397,72 @@ h1{
 .ourwork_btn a:hover{
     color:black;
 }
+
+
+
+
+
+
+
+/*css styling for about annika page*/
+.headingtext-aboutannika{
+    font-size: 7vh;
+    text-align: left;
+    color:#E987F5;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    /*If required*/
+    overflow: hidden
+}
+
+.content-aboutannika{
+    height: 30vh;
+    width: 100%;
+    margin-bottom: 90vh;
+}
+
+.content-aboutannika img{
+  border-radius: 50px;
+  height: 95vh;
+  margin-left: 3vw;
+  margin-top: 5vh;
+  float: left;
+}
+
+.about_text {
+  font-size: 2vw;
+  margin-left: 47vw;
+  padding-top: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.getintouch-about{
+  background-color:#E987F5;
+  height: 15vh;
+  width: 27vw;
+  font-size: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;/*curves the edges of the button to fit the design*/
+  margin-top:  8vh;
+  margin-right: 5vw;
+  border-width: 0;
+}
+
+.getintouch-about a{
+  text-decoration: none;
+  color:white;
+}
+
+.getintouch-about a:hover{
+  color:black;
+}
+
+
+
+
+
+
 
 
 /*css styling for our customers page*/
@@ -368,14 +481,14 @@ h1{
 .column {
   flex: 33.33%;
   padding: 2px;
-  margin-bottom:10vh;
-  margin-top:5vh;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
 .content-ourcustomers{
-    height:20vh;
-    width:100%;
-    margin-bottom:90vh;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 90vh;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -387,13 +500,19 @@ h1{
 
 /*css styling for contact us page*/
 .hero-image{
-    height:70vh;
-    width:100%;
+    height: 70vh;
+    width: 100%;
     background-color:pink;
 }
 
 .hero-image img{
-    height:70vh;
-    width:100%;
+    height: 70vh;
+    width: 100%;
 
 }
+
+
+
+
+
+/*styling for PRICING PAGE*/
