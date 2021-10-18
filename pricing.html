@@ -8,7 +8,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="photography.css">
 
 </head>
@@ -17,14 +16,19 @@
   <div class="container-fluid">
     <div class="app">
       <div class="header">
-<div class="banner_nav sticky-top">
         <div class="banner">
+          <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
+          <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
               <a href="homepage.html">Home</a>
-              <div class="dropdown">
-                <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              <div class="dropdown dropdown--OurWork">
+                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
                   Our Work
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -36,7 +40,8 @@
               </div>
               <a href="ourcustomers.html">Our Customer</a>
               <a href="about-annika.html">About Annika</a>
-              <div class="dropdown">
+
+              <div class="dropdown dropdown--Pricing">
                 <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   Pricing
                 </a>
@@ -50,36 +55,38 @@
         </div>
       </div>
       </div>
+
         <!-- content section html -->
 <div class="text_heading">
    
-        <div class="headingtext-aboutannika">
-            About Annika
+        <div class="headingtext-pricing">
+            Pricing
            </div>
 
 
-<div class="content-aboutannika">
-    <img src="images/aboutannika.png" alt="image of Annika">
+<div class="content-pricing">
+    <img src="images/duck.png" alt="image of a duck in a bed of flowers">
 
-    <div class="about_text">
-        Annika was first introduced to photography at <br>
-        an early age when she was gifted a camera for <br>
-        her birthday. She initiall developed her passion <br>
-        for photography by taking photographs of nature <br>
-        including birds and flora. On leaving school she <br>
-        continued with this passion as a side activity while <br>
-        also working full time. Five years ago she decided to <br>
-        concentrate soley on photography and started her <br>
-        own business. Over recent years she has developed  <br>
-        her skills in the color gel photography. Annika <br>
-        particulary loves photography animals, families,  <br>
-        and children and is continually grateful to be<br>
-        given the oportunity to share her clients lives  <br>
-        and capture their special moments.She has won  <br>
-        multiple awards for her work and continues to<br>
-        grow and push herself as a photographer.<br>
+    <div class="pricing_text">
+       <b class="pricing-subheader">Contemporary</b> <br>
+        Prices can vary depending on your specific requirements.<br>
+        please get in touch for a quote<br><br>
 
-        <button class="getintouch-about"><a href="contact-us.html">Get In Touch</a></button>
+        <b class="pricing-subheader">Professional</b> <br>
+        Studio session (one person) - $175.00<br>
+        Location work is also available.<br>
+        Please get in touch for a quote<br><br>
+
+        <b class="pricing-subheader">Portraits</b> <br>
+        Families, pets and individuals <br>
+        Session fee - $125.00<br>
+        Prints available from $55.00<br><br>
+
+        <b class="pricing-subheader">Weddings and Family events</b> <br>
+        We have a number of packages available. <br>
+        Please get in touch for a quote<br><br>
+
+        <button class="getintouch-about"><a href="contact-us.html"><h1>Get In Touch</h1></a></button>
     </div>
 
 

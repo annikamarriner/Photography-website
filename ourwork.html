@@ -17,14 +17,19 @@
   <div class="container-fluid">
     <div class="app">
       <div class="header">
-<div class="banner_nav sticky-top">
         <div class="banner">
+          <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
+          <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
               <a href="homepage.html">Home</a>
-              <div class="dropdown">
-                <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              <div class="dropdown dropdown--OurWork">
+                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
                   Our Work
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -36,7 +41,8 @@
               </div>
               <a href="ourcustomers.html">Our Customer</a>
               <a href="about-annika.html">About Annika</a>
-              <div class="dropdown">
+
+              <div class="dropdown dropdown--Pricing">
                 <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   Pricing
                 </a>
@@ -67,26 +73,55 @@
                there every step of the way. 
             </div>
 
-<div class="content">
+  <div class="content">
 
-<div class="first-row">
-<img src="images/first_row.png" alt="colour gel photo">
-</div>
+    <div class="row image-feature">
+      <div class="col-4 image-feature__image">
+        <img src="images/first_row.png" alt="colour gel photo" max-width="448px" max-height="384px">
+      </div>
+      <div class="col-8 image-feature__text">
+        <a href="contemporary.html"><h1>Contemporary</h1></a>
+        <p>Through the use of lighting and reflections. <br>
+          Annika is able to achieve successful <br>
+          and professional colour gel photographs</p>
+      </div>
+    </div>
 
-<div class="second-row">
-<img src="images/second_row.png" alt="family photo">
-</div>
+    <div class="row image-feature image-feature--right">
+      <div class="col-8 image-feature__text">
+        <a href="families.html"><h1>Families</h1></a>
+        <p>Special moment can last a <br>
+          lifetime through a simple photograph </p>
+      </div>
+      <div class="col-4 image-feature__image image-feature__image--right">
+        <img src="images/second_row.png" alt="family photo" max-width="390px" max-height="374px">
+      </div>
+    </div>
 
-<div class="third-row">
-<img src="images/third_row.png" alt="dog photo">
-</div>
+    <div class="row image-feature">
+      <div class="col-4 image-feature__image">
+        <img src="images/third_row.png" alt="dog photo" max-width="446px" max-height="378px">
+      </div>
+      <div class="col-8 image-feature__text">
+        <a href="pets.html"><h1>Pets</h1></a>
+        <p>Our pets can grow up too fast. Make sure <br>
+          you remember them as tiny as they once were <br>
+          for the many years to come</p>
+      </div>
+    </div>
 
-<div class="fourth-row">
-<img src="images/fourth_row.png" alt="flower photo">
-</div>
+    <div class="row image-feature image-feature--right">
+      <div class="col-8 image-feature__text">
+        <a href="nature.html"><h1>Nature</h1></a>
+        <p>The beauty of nature is captured by Annika</p>
+      </div>
+      <div class="col-4 image-feature__image image-feature__image--right">
+        <img src="images/fourth_row.png" alt="flower photo" max-width="408px" max-height="376px">
+      </div>
+    </div>
 
-<button class="ourwork_btn center"><a href="contact-us.html">Get In Touch</a></button>
-</div>
+    <button class="ourwork_btn center"><a href="contact-us.html"><h1>Get In Touch</h1></a></button>
+  </div>
 </div>
 <!--footer html section-->
         <div class="footer-ourwork row">
@@ -127,7 +162,7 @@
     <!--allows us to display dynamic data easily-->
 
     <!--Custome JS for VUE -->
-    <script src="main_vue_filters.js"></script>
+    <script src="VUE.js"></script>
 
   </div>
 

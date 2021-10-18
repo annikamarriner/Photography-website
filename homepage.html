@@ -5,10 +5,10 @@
   <!--links to bootstrap in order to include the server in my coding-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="photography.css">
 
 </head>
@@ -17,14 +17,19 @@
   <div class="container-fluid">
     <div class="app">
       <div class="header">
-<div class="banner_nav sticky-top">
         <div class="banner">
+          <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
+          <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
               <a href="homepage.html">Home</a>
-              <div class="dropdown">
-                <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              <div class="dropdown dropdown--OurWork">
+                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
                   Our Work
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -36,7 +41,8 @@
               </div>
               <a href="ourcustomers.html">Our Customer</a>
               <a href="about-annika.html">About Annika</a>
-              <div class="dropdown">
+
+              <div class="dropdown dropdown--Pricing">
                 <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   Pricing
                 </a>
@@ -81,22 +87,22 @@
       <div class="content">
         <!---creating the tagline which appears in the homepage-->
         <div class="tagline">
-          <div class="tagline__upper tagline__lower">
-            <h2>Creative | Inspiring | Natural</h2> 
-            <h1>Enjoy your experience with us</h1>
+            <h2 class="tagline__upper tagline__upper-desktop">Creative | Inspiring | Natural</h2> 
+            <h2 class="tagline__upper tagline__upper-mobile">Creative Inspiring Natural</h2>
+            <h1 class="tagline__lower">Enjoy your experience with us</h1>
           </div>
-        </div>
+        
         <!--creating the button for get in touch on the homepage-->
         
-          <button class="getintouch-button center"><a href="contact-us.html">Get In Touch</a></button>
+          <button class="getintouch-button center"><a href="contact-us.html"><p>Get In Touch</p></a></div>button>
 
         </div>
 
 
 
 <!--footer html section-->
-        <div class="footer-homepage row">
-          <div class="contactus-footer col">Contact us
+        <div class="footer footer--homepage row">
+          <div class="footer__contact_us contactus-footer col">Contact us
           <div class="footer-options">
             Phone Number: <a href="tel:+64 276-780-011">+64-276-780-011</a>
             <br>
@@ -105,7 +111,7 @@
         </div>
 
 
-        <div class="about-footer col">About 
+        <div class="footer about-footer col">About 
           <div class="footer-options">
             <a href="about-annika.html">About Annika Page</a>
             <br>
@@ -117,7 +123,7 @@
 
 
     
-        <div class="socialmedia-footer col">Social Media
+        <div class="footer socialmedia-footer col">Social Media
           <div class="footer-options">
     
           </div>
@@ -133,7 +139,7 @@
     <!--allows us to display dynamic data easily-->
 
     <!--Custome JS for VUE -->
-    <script src="main_vue_filters.js"></script>
+    <script src="VUE.js"></script>
 
   </div>
 

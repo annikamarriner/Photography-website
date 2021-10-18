@@ -1,23 +1,8 @@
 * {
     box-sizing: border-box;
+    font-size:12px;
 }
 
-
-
-/*responsive css styling*/
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  div.example {
-    font-size: 80px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}
 
 
 /*styling for all pages*/
@@ -81,6 +66,7 @@ dropdown:hover .dropdown-menu {
  background-color: #0f0f0f;
 }
 
+
 /*styling for the header which holds the banner and navagtion*/
 .header {
   background-color:#0f0f0f;
@@ -100,6 +86,11 @@ dropdown:hover .dropdown-menu {
   background-position:center top;
 }
 
+.banner .icon{
+  display:none;
+  color:white;
+}
+
 
 /*styling for navagtion which appears under the banner*/
 .navigation {
@@ -108,6 +99,8 @@ dropdown:hover .dropdown-menu {
   position: absolute;
   bottom: 0px;
   font-size: 11px;
+  background-color: #0f0f0f;
+  z-index: 2
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -165,6 +158,13 @@ dropdown:hover .dropdown-menu {
   margin-top: 60vh;
 }
 
+.footer-contactus{
+  height: 17vh;
+  background:black;
+  margin-top: 70vh;
+}
+
+
 /*creates the styling for the contact third of the footer*/
 .contactus-footer {
   background: black;
@@ -184,8 +184,6 @@ dropdown:hover .dropdown-menu {
 .contactus-footer a:hover{
     color:rgb(204, 90, 204);
 }
-
-
 /*creates the styling for the about third of the footer*/
 .about-footer {
   background: black;
@@ -204,6 +202,7 @@ dropdown:hover .dropdown-menu {
 
 .about-footer a:hover{
   color:rgb(204, 90, 204);
+  text-decoration:none;
 }
 
 /*creates the styling for the social media third of the footer*/
@@ -260,7 +259,6 @@ dropdown:hover .dropdown-menu {
 /*styling for slideshow which appears at top of home page*/
 .slideshow {
     display: inline-block;
-    background-color: blue;
     height: 76vh;
     width: 100%;
 }
@@ -272,13 +270,21 @@ dropdown:hover .dropdown-menu {
     display: inline-block
 }
 
-/*styles for the h2 heading on the homepage*/
-h2{
-    font-size: 10vh;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;/*centers this heading on the homepage*/
+.tagline__upper{
+  font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
     margin-top:7vh;
 }
+
+.tagline__upper-desktop{
+  font-size:10vh;
+
+}
+
+.tagline__upper-mobile{
+  display:none;
+}
+
 
 /*styles the h1 heading on the homepage*/
 h1{
@@ -291,16 +297,15 @@ h1{
 /*styling for the getin touch button which appears on the homepage*/
 .getintouch-button{
     background-color:#E987F5;
-    height:15vh;
-    width:27vw;
+    height:3em;
+    width:8.5em;
     font-size:5vh;
     font-family:Arial, Helvetica, sans-serif;
     border-radius:10px;/*curves the edges of the button to fit the design*/
     margin-top: 15vh;
     border-width:0;
     padding:0.8em 1.5em;
-    justify-content:center;/*centers the button on the html page*/
-    
+    justify-content:center;/*centers the button on the html page*/    
 }
 
 /*styles for the get in touch button noted on the homepage when the use hovers over it */
@@ -313,13 +318,16 @@ h1{
     color:white;
 }
 
-
-
-
+.getintouch-button a p{
+  font-size:4vh;
+}
 
 
 
   /*Our Work page styling*/
+
+  /*this section appears at the top of the majority of pages*/
+    /*Our Work page styling*/
 
   /*this section appears at the top of the majority of pages*/
   .text_heading{
@@ -329,7 +337,7 @@ h1{
   }
 
   .heading-text{
-    font-size: 7vh;
+    font-size: 4em;
     text-align: left;
     color:#E987F5;
     margin-left: 25vh;
@@ -340,7 +348,7 @@ h1{
   }
 
   .sub-heading{
-      font-size: 3.5vh;
+      font-size: 2em;
       text-align: left;
       color:rgb(78, 76, 76);
       margin-left: 25vh;
@@ -348,30 +356,56 @@ h1{
   }
 
 /*styling for the images appearing on the our work page*/
-.first-row img{
-    height: 40vh;
-    text-align: left;
-    margin-top: 10vh;
-    margin-left: 5vw;
+.image-feature__text {
+  font-size: 3vh;
+  padding: 5em 5em 5em .5em;
 }
 
-.second-row img{
-    height: 40vh;
-    float: right;
-    margin-right: 5vw;
+.image-feature--right .image-feature__text {
+  padding: 5em .5em 5em 5em;
 }
 
-.third-row img{
-    height: 40vh;
-    text-align: left;
-    margin-left: 5vw;
-    margin-top: 38vh;
+.image-feature--right .image-feature__image, .image-feature--right .image-feature__text {
+  text-align: right;
 }
 
-.fourth-row img{
-    height: 40vh;
-    float: right;
-    margin-right: 5vw;
+.image-feature__text h1 {
+  color: #E987F5;
+}
+
+
+.image-feature__text a {
+  text-decoration:none; 
+}
+
+.content p{
+  font-size:1em;
+}
+
+/*css styling for the button appearing at the bottom of the our work page*/
+.ourwork_btn{
+    background-color:#E987F5;
+    height: 15vh;
+    width: 27vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;/*curves the edges of the button to fit the design*/
+    margin-top:  20vh;
+    margin-right: 68vw;
+    border-width: 0;
+}
+.ourwork_btn h1{
+  font-size:3em;
+}
+
+/*removes the default underline for links*/
+.ourwork_btn a{
+    color:white;
+    text-decoration:none;
+}
+
+/*allows for the button to change text color when the user hovers over the item*/
+.ourwork_btn a:hover{
+    color:black;
 }
 
 /*css styling for the button appearing at the bottom of the our work page*/
@@ -449,6 +483,10 @@ h1{
   border-width: 0;
 }
 
+.getintouch-about h1{
+  font-size:3em;
+}
+
 .getintouch-about a{
   text-decoration: none;
   color:white;
@@ -469,8 +507,6 @@ h1{
 /*styling for slideshow which appears in the middle of the our customers*/
 .slideshow-ourcustomers {
     display: inline-block;
-    background-color: blue;
-    height: 2vh;
     width: 100%;
 }
 
@@ -481,38 +517,423 @@ h1{
 .column {
   flex: 33.33%;
   padding: 2px;
+  padding-left:2vw;
   margin-bottom: 10vh;
-  margin-top: 5vh;
 }
 
 .content-ourcustomers{
     height: 20vh;
     width: 100%;
-    margin-bottom: 90vh;
+    margin-bottom: 80vh;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+.customer-feedback{
+  height:50vh;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other
+@media screen and (max-width: 200px) {
   .column {
     width: 100%;
   }
 }
 
+ */
+
+
+
+
+
+
+
+
+
 /*css styling for contact us page*/
+/* styling for the contact us us page*/
+
+
 .hero-image{
-    height: 70vh;
-    width: 100%;
-    background-color:pink;
+  width: 100%;
 }
 
 .hero-image img{
-    height: 70vh;
-    width: 100%;
-
+  height: 70vh;
+  width: 100%;
 }
+
+.text_heading_contactus{
+  display: inline-block;
+  height: 30vh;
+  width: 100%;
+}
+
+.heading-text_contactus{
+  font-size: 3em;
+  text-align: left;
+  color:#E987F5;
+  margin-left: 8vh;
+  margin-top: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  /*If required*/
+  overflow: hidden
+}
+
+.contactUsForm {
+max-width: 800px;
+font-size: 20px;
+}
+
+.contactUsForm .row {
+padding-bottom: 2em;
+}
+
+.contactUsForm textarea, .contactUsForm input {
+background-color: #FDE3FF;
+border: none;
+height:4vh;
+}
+
+.contactUsForm textarea {
+width: 95%;
+height:13vh;
+}
+
+.contactUsForm input[type="text"] {
+width: 90%;
+}
+
+.contactUsForm__robotCheck {
+background-color: #FDE3FF;
+padding: 0.2em 0.5em;
+float: right;
+margin-right: 10%;
+width:10vw;
+height:6vh;
+}
+
+.contactUsForm input[type="submit"] {
+padding: 0.2em 0.5em;
+height:6vh;
+width:5vw;
+}
+
+.required-field {
+color: red;
+}
+
+
+.submit_btn {
+background-color:#E987F5;
+height: 15vh;
+width: 27vw;
+font-size: 5vh;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 10px;/*curves the edges of the button to fit the design*/
+margin-top:  8vh;
+margin-right: 5vw;
+border-width: 0;
+margin-bottom: 50vh;
+}
+
+.submit_btn a{
+  text-decoration: none;
+  color:white;
+  }
+  
+  .submit_btn a:hover{
+  color:black;
+  }
 
 
 
 
 
 /*styling for PRICING PAGE*/
+.headingtext-pricing{
+  font-size: 7vh;
+  text-align: left;
+  color:#E987F5;
+  margin-left: 7vw;
+  margin-top: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  /*If required*/
+  overflow: hidden
+}
+
+.header-pricing{
+  text-decoration: purple;
+}
+
+.content-pricing{
+  height: 30vh;
+  width: 100%;
+  margin-bottom: 90vh;
+}
+
+.content-pricing img{
+border-radius: 50px;
+height: 100vh;
+margin-right: 3vw;
+float: right;
+}
+
+.pricing_text {
+font-size: 1.5vw;
+margin-left: 7vw;
+padding-top: 5vh;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-subheader{
+  font-size:3vh;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.getintouch-pricing{
+background-color:#E987F5;
+height: 15vh;
+width: 27vw;
+font-size: 5vh;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 10px;/*curves the edges of the button to fit the design*/
+margin-top:  8vh;
+margin-right: 5vw;
+border-width: 0;
+}
+
+.getintouch-pricing h1{
+font-size:3em;
+}
+
+.getintouch-pricing a{
+text-decoration: none;
+color:white;
+}
+
+.getintouch-pricing a:hover{
+color:black;
+}
+
+
+
+
+  @media only screen and (max-width: 768px){
+    /*responsive styling for navigation*/
+    .topnav > a, .topnav > .dropdown {
+      display: none;
+    }
+    .navigation {
+      display:none;
+    }
+
+    .banner {
+      height:142px;
+    }
+
+    .banner .icon {
+      position:absolute;
+      top:0;
+      right:0;
+      display:block;
+    }
+
+    .topnav.mobile-size > a, .topnav.mobile-size > .dropdown {
+      display:block;
+    }
+
+    /*responsive styling for footer*/
+   .footer .col{
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  .footer-ourcustomers .col{
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  .footer-ourwork .col{
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  .footer-aboutannika .col{
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  .footer-contactus .col{
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  /*responsive styling for homepage*/
+    .slideshow{
+      height:auto;
+    }
+
+    .tagline__upper{
+      font-size:48px;
+    }
+
+    .tagline__lower{
+      font-size:20px;
+    }
+
+    .tagline__upper-desktop{
+      display:none;
+    
+    }
+    
+    .tagline__upper-mobile{
+      display:inline-block;
+    }
+    
+   .getintouch-button{
+     padding:0.5em;
+     font-size:5vh;
+     width:80vw;
+     margin-top:2em;
+     height:auto;
+   }
+
+   .getintouch-button a{
+     font-size:5vh;
+   }
+
+  /*responsive styling for our work page*/
+  .heading-text{
+    font-size: 3em;
+    text-align: left;
+    color:#E987F5;
+    margin-left: 8vh;
+    margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    /*If required*/
+    overflow: hidden
+  }
+
+  .sub-heading{
+      font-size: 1.5em;
+      text-align: left;
+      color:rgb(78, 76, 76);
+      margin-left: 8vh;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .image-feature__text {
+    font-size: 1vh;
+    padding: 5em 5em 5em .5em;
+  }
+  
+  .image-feature--right .image-feature__text {
+    padding: 5em .5em 5em 5em;
+  }
+
+  .image-feature__text {
+    font-size: 2vh;
+    padding: 3em 3em 3em .3em;
+  }
+  
+  .image-feature--right .image-feature__text {
+    padding: 3em .3em 3em 3em;
+  }
+
+  /*responsive styling for our customers page*/
+  .customer-feedback {
+    height: auto;
+}
+
+/*responsive styling for about annika page*/
+.headingtext-aboutannika{
+  font-size: 5vh;
+  text-align:center;
+  color:#E987F5;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  /*If required*/
+  overflow: hidden
+}
+
+.content-aboutannika{
+  height: 30vh;
+  width: 100%;
+  margin-bottom: 90vh;
+}
+
+.content-aboutannika img{
+border-radius: 50px;
+height: 45vh;
+margin-left: 25vw;
+margin-top: 2vh;
+}
+
+.about_text {
+font-size: 3vw;
+padding-top: 50vh;
+margin-left:20vw;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.getintouch-about{
+background-color:#E987F5;
+padding:1em;
+font-size:2vh;
+width:60vw;
+margin-top:3em;
+height:auto;
+}
+
+.getintouch-about a{
+  font-size:1.5vh;
+};
+
+/*responsive styling for contact us page*/
+.hero-image{
+  height: 30vh;
+  width: 100%;
+}
+
+.hero-image img{
+  height: 30vh;
+  width: 100%;
+
+}
+
+.text_heading_contactus{
+  display: inline-block;
+  height: 20vh;
+  width: 100%;
+  margin-left:1vw;
+}
+
+.heading-text_contactus{
+  font-size: 2.5em;
+  text-align: left;
+  color:#E987F5;
+  margin-left: 2vw;
+  margin-top: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  /*If required*/
+  overflow: hidden
+}
+
+
+  }
+
+  /* responsive css styling
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+} 

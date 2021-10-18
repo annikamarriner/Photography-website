@@ -17,14 +17,19 @@
   <div class="container-fluid">
     <div class="app">
       <div class="header">
-<div class="banner_nav sticky-top">
         <div class="banner">
+          <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
+          <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
               <a href="homepage.html">Home</a>
-              <div class="dropdown">
-                <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              <div class="dropdown dropdown--OurWork">
+                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
                   Our Work
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -36,7 +41,8 @@
               </div>
               <a href="ourcustomers.html">Our Customer</a>
               <a href="about-annika.html">About Annika</a>
-              <div class="dropdown">
+
+              <div class="dropdown dropdown--Pricing">
                 <a href="ourwork.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   Pricing
                 </a>
@@ -80,7 +86,7 @@
         multiple awards for her work and continues to<br>
         grow and push herself as a photographer.<br>
 
-        <button class="getintouch-about"><a href="contact-us.html">Get In Touch</a></button>
+        <button class="getintouch-about"><a href="contact-us.html"><h1>Get In Touch</h1></a></button>
     </div>
 
 
