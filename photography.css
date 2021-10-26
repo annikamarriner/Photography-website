@@ -33,16 +33,45 @@ html {
   margin:auto;
 }
 
+.banner a .fa {
+  width: auto;
+  padding: 10px;
+}
+
+.banner .icon {
+  display: none;
+} 
+
+/*styling for Navigation Bar*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #0f0f0f;
+  /* overflow: hidden; */
+  position: absolute;
+  margin:auto;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: center;
   color: #f2f2f2;
   text-align: center;
-  padding: 0 4vw;
+  padding: 0 2.9vw;
   text-decoration: none;
   font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.banner a .fa {
+  width: auto;
+  padding: 10px;
+}
+
+.banner .icon {
+  display: none;
+  color:white;
+}
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -66,7 +95,6 @@ dropdown:hover .dropdown-menu {
  background-color: #0f0f0f;
 }
 
-
 /*styling for the header which holds the banner and navagtion*/
 .header {
   background-color:#0f0f0f;
@@ -86,11 +114,6 @@ dropdown:hover .dropdown-menu {
   background-position:center top;
 }
 
-.banner .icon{
-  display:none;
-  color:white;
-}
-
 
 /*styling for navagtion which appears under the banner*/
 .navigation {
@@ -99,8 +122,6 @@ dropdown:hover .dropdown-menu {
   position: absolute;
   bottom: 0px;
   font-size: 11px;
-  background-color: #0f0f0f;
-  z-index: 2
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -129,6 +150,7 @@ dropdown:hover .dropdown-menu {
 
 
 
+
 /*Styling for footer*/
 /*creates the styling for the footer*/
 .header, .content, .footer {
@@ -143,7 +165,6 @@ dropdown:hover .dropdown-menu {
 .footer-ourcustomers{
     height: 17vh;
     background:black;
-    margin-top: 30vh;
 }
 
 .footer-ourwork{
@@ -205,8 +226,8 @@ dropdown:hover .dropdown-menu {
   text-decoration:none;
 }
 
-/*creates the styling for the social media third of the footer*/
-.socialmedia-footer {
+/*creates the styling for the information third of the footer*/
+.information-footer {
   background: black;
   font-size: 3vh;
   text-align: center;
@@ -216,7 +237,6 @@ dropdown:hover .dropdown-menu {
   text-decoration: none;
 }
 
-/* Style all font awesome icons */
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -230,24 +250,25 @@ dropdown:hover .dropdown-menu {
   opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.footer-options {
+.footer-option {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vh;
 }
+
+.footer-option a{
+  color:white;
+  text-decoration:none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:1.8vh;
+}
+
+.footer-option a:hover{
+  color:#E987F5;
+  text-decoration:none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:2vh;
+}
+
 
 
 
@@ -337,10 +358,9 @@ h1{
   }
 
   .heading-text{
-    font-size: 4em;
-    text-align: left;
+    font-size: 5vh;
+    text-align: center;
     color:#E987F5;
-    margin-left: 25vh;
     margin-top: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     /*If required*/
@@ -349,9 +369,8 @@ h1{
 
   .sub-heading{
       font-size: 2em;
-      text-align: left;
+      text-align: center;
       color:rgb(78, 76, 76);
-      margin-left: 25vh;
       font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -371,6 +390,11 @@ h1{
 
 .image-feature__text h1 {
   color: #E987F5;
+  text-align:left;
+}
+
+.image-feature--right .image-feature__text h1{
+  text-align:right;
 }
 
 
@@ -378,9 +402,13 @@ h1{
   text-decoration:none; 
 }
 
+.image-feature__text p{
+  font-family:Arial, Helvetica, sans-serif;
+}
 .content p{
   font-size:1em;
 }
+
 
 /*css styling for the button appearing at the bottom of the our work page*/
 .ourwork_btn{
@@ -440,7 +468,7 @@ h1{
 
 /*css styling for about annika page*/
 .headingtext-aboutannika{
-    font-size: 7vh;
+    font-size: 5vh;
     text-align: left;
     color:#E987F5;
     margin-left: 10vw;
@@ -514,7 +542,7 @@ h1{
   display: flex;
 }
 
-.column {
+.flowerimg {
   flex: 33.33%;
   padding: 2px;
   padding-left:2vw;
@@ -522,9 +550,8 @@ h1{
 }
 
 .content-ourcustomers{
-    height: 20vh;
+    height: auto;
     width: 100%;
-    margin-bottom: 80vh;
 }
 
 .customer-feedback{
@@ -611,6 +638,13 @@ width:10vw;
 height:6vh;
 }
 
+.contactUsForm__robotCheck input, .contactUsForm_robotCheck label{
+  vertical-align:middle;
+  margin-right:1em;
+  margin-left:1em;
+}
+
+
 .contactUsForm input[type="submit"] {
 padding: 0.2em 0.5em;
 height:6vh;
@@ -650,7 +684,7 @@ margin-bottom: 50vh;
 
 /*styling for PRICING PAGE*/
 .headingtext-pricing{
-  font-size: 7vh;
+  font-size: 5vh;
   text-align: left;
   color:#E987F5;
   margin-left: 7vw;
@@ -718,6 +752,111 @@ color:black;
 
 
 
+
+
+
+/*styling for the FAQ page*/
+.banner-FAQ{
+  background-color:pink;
+  height:5vh;
+  width:50vw;
+  margin-bottom:5vh;
+}
+
+.content-FAQ{
+  height:auto;
+  justify-content:center!important;
+}
+
+
+
+/*styling for the terms and condition page*/
+
+.heading-TC{
+  font-size: 5vh;
+  text-align: left;
+  color:#E987F5;
+  margin-left: 8vw;
+  margin-top: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  /*If required*/
+  overflow: hidden
+}
+.TC-text{
+  margin-left:8vw;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:2.5vh;
+  margin-top:2vh;
+}
+
+/*styling for our blog page*/
+.header-blog{
+  font-size: 5vh;
+  text-align: left;
+  color:#E987F5;
+  margin-left: 8vw;
+  margin-top: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  /*If required*/
+  overflow: hidden
+}
+
+.subheading-blog{
+  font-size: 4vh;
+  text-align: left;
+  color:#E987F5;
+  margin-top:3vh;
+  margin-left: 8vw;
+  font-family: Arial, Helvetica, sans-serif;
+  /*If required*/
+  overflow: hidden
+}
+
+.blog-text{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:2.5vh;
+  margin-left:8vw;
+}
+
+.row-blog {
+  display: flex;
+  margin-right:10vw;
+  margin-left:10vw;
+}
+
+.dogimg {
+  flex: 33.33%;
+  padding: .5px;
+  padding-left:2vw;
+  margin-top:3vh;
+  margin-bottom:5vh;
+}
+
+.row-blog .dogimg{
+  height:auto;
+  
+}
+
+.stephimg {
+  flex: 33.33%;
+  padding: .5px;
+  padding-left:2vw;
+  margin-top:3vh;
+  margin-bottom:5vh;
+}
+
+.laraimg {
+  flex: 33.33%;
+  padding: .5px;
+  padding-left:2vw;
+  margin-top:3vh;
+  margin-bottom:5vh;
+  height:15vh;
+  width:15vw;
+}
+
+
+
   @media only screen and (max-width: 768px){
     /*responsive styling for navigation*/
     .topnav > a, .topnav > .dropdown {
@@ -751,6 +890,7 @@ color:black;
   .footer-ourcustomers .col{
     flex: 1 1 100%;
     margin: 0;
+    margin-bottom:5vh;
   }
 
   .footer-ourwork .col{
@@ -822,7 +962,7 @@ color:black;
       font-family: Arial, Helvetica, sans-serif;
   }
 
-  .image-feature__text {
+  /* .image-feature__text {
     font-size: 1vh;
     padding: 5em 5em 5em .5em;
   }
@@ -838,8 +978,49 @@ color:black;
   
   .image-feature--right .image-feature__text {
     padding: 3em .3em 3em 3em;
+  } */
+
+  
+  .image-feature:not(.image-feature--right){
+    display:flex;
+    flex-direction:column-reverse;
   }
 
+    .image-feature__text{
+      font-size:3vh;
+      padding:0!important;
+      width:100%;
+      text-align:left!important;
+      
+    }
+
+    .image-feature{
+      margin:10vh;
+    }
+
+    .image-feature__text h1{
+      text-align:center!important;
+    }
+
+    .image-feature__image{
+      width:100%;
+      margin:0 auto;
+    }
+
+    .image-feature__image img{
+      width:100%;
+      height:auto;
+    }
+
+    .ourwork_btn{
+      margin:0 auto;
+      width:60%;
+    }
+
+    .ourwork_btn h1{
+      margin:0
+    }
+  
   /*responsive styling for our customers page*/
   .customer-feedback {
     height: auto;
@@ -921,6 +1102,15 @@ height:auto;
   overflow: hidden
 }
 
+  .contactUsForm input[type="submit"]{
+    width:auto;
+    padding: 0 1.5em;
+  }
+
+  .contactUsForm__robotCheck{
+    width:auto;
+    padding:0 1.5em;
+  }
 
   }
 
