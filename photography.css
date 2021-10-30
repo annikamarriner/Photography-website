@@ -185,6 +185,13 @@ dropdown:hover .dropdown-menu {
   margin-top: 70vh;
 }
 
+.footer-contactsubmit{
+  height:17vh;
+  background:black;
+  margin-top:0;
+}
+
+
 
 /*creates the styling for the contact third of the footer*/
 .contactus-footer {
@@ -417,36 +424,12 @@ h1{
     width: 27vw;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;/*curves the edges of the button to fit the design*/
-    margin-top:  20vh;
-    margin-right: 68vw;
     border-width: 0;
+    margin-top:5vh;
 }
+
 .ourwork_btn h1{
   font-size:3em;
-}
-
-/*removes the default underline for links*/
-.ourwork_btn a{
-    color:white;
-    text-decoration:none;
-}
-
-/*allows for the button to change text color when the user hovers over the item*/
-.ourwork_btn a:hover{
-    color:black;
-}
-
-/*css styling for the button appearing at the bottom of the our work page*/
-.ourwork_btn{
-    background-color:#E987F5;
-    height: 15vh;
-    width: 27vw;
-    font-size: 5vh;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;/*curves the edges of the button to fit the design*/
-    margin-top:  20vh;
-    margin-right: 68vw;
-    border-width: 0;
 }
 
 /*removes the default underline for links*/
@@ -526,8 +509,41 @@ h1{
 
 
 
+/*css styling for gallery pages within photos*/
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 
 
@@ -607,7 +623,7 @@ h1{
 
 .contactUsForm {
 max-width: 800px;
-font-size: 20px;
+font-size: 40px;
 }
 
 .contactUsForm .row {
@@ -617,7 +633,7 @@ padding-bottom: 2em;
 .contactUsForm textarea, .contactUsForm input {
 background-color: #FDE3FF;
 border: none;
-height:4vh;
+height:5vh;
 }
 
 .contactUsForm textarea {
@@ -757,7 +773,7 @@ color:black;
 
 /*styling for the FAQ page*/
 .banner-FAQ{
-  background-color:pink;
+  background-color: #E987F5;
   height:5vh;
   width:50vw;
   margin-bottom:5vh;
@@ -768,7 +784,108 @@ color:black;
   justify-content:center!important;
 }
 
+.faq-title{
+  font-size:32px;
+  margin:2vh 10vw;
+  color:#E987F5;
+}
 
+.faq-item{
+  margin:3vh 10vw;
+}
+
+.faq-item p{
+  font-size:18px;
+}
+
+.faq-item__question{
+  background-color:#E987F5;
+  padding:1em;
+  border-radius:2em;
+}
+
+.faq-item__question h4{
+  font-size:24px;
+  color:white;
+}
+
+.faq-item__answer{
+  padding:1em;
+}
+
+/*styling for the getin touch button which appears on the homepage*/
+.getintouch-faq{
+  background-color:#E987F5;
+  height:2.3em;
+  width:8em;
+  font-size:5vh;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius:10px;/*curves the edges of the button to fit the design*/
+  margin-top: 5vh;
+  border-width:0;
+  padding:0.8em 1.5em;
+  justify-content:center;/*centers the button on the html page*/  
+  margin-left:35vw;  
+  margin-bottom:5vh;
+}
+
+/*styles for the get in touch button noted on the homepage when the use hovers over it */
+.getintouch-faq :hover{
+  color:black;
+}
+
+.getintouch-faq a{
+  text-decoration: none;
+  color:white;
+}
+
+.getintouch-faq a p{
+font-size:3vh;
+}
+
+
+/* occasions */
+
+.content-gallery {
+  margin: 5vh 5vw;
+  align-items: center;
+}
+
+.content-gallery h2 {
+  font-size: 36px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#E987F5;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-card {
+  max-width: 500px;
+  background: #E987F5;
+  margin: 3em;
+  display: inline-block;
+}
+
+.gallery-card__image img {
+  width: 100%;
+}
+
+.gallery-card__title {
+  font-size: 28px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: .5em;
+  height:8vh;
+}
+
+
+/*styling for the contact us submit page*/
+.content-image img{
+  height:70vh;
+  width:100%;
+}
 
 /*styling for the terms and condition page*/
 
@@ -1111,6 +1228,21 @@ height:auto;
     width:auto;
     padding:0 1.5em;
   }
+
+  /*responsive stlying for faq page*/
+  .getintouch-faq{
+    background-color:#E987F5;
+    padding:1em;
+    font-size:2vh;
+    width:60vw;
+    margin-top:3em;
+    height:auto;
+    }
+    
+    .getintouch-faq a{
+      font-size:1.5vh;
+    };
+    
 
   }
 
