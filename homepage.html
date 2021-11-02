@@ -24,7 +24,7 @@
 
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
-            <div class="topnav">
+            <div class="topnav ">
               <a href="homepage.html">Home</a>
               
               <div class="dropdown dropdown--OurWork">
@@ -32,21 +32,20 @@
                   Our Work
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="occasions.html">Occasions</a></li>
-                  <li><a class="dropdown-item" href="pets.html">Pets</a></li>
-                  <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
-                  <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+                  <li><a class="dropdown-item" href="galleries.html">Galleries</a></li>
                 </ul>
               </div>
-              <a href="ourcustomers.html">Our Customers</a>
-              <a href="about-annika.html">About Annika</a>
-              <a href="pricing.html">Pricing</a>
+              <a href="testimonials.html">Testimonials</a>
+              
 
-              <div class="dropdown dropdown--ContactUs">
+              <div class="dropdown dropdown--About">
                 <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact Us
+                  About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="about-annika.html">About Annika</a></li>
+                  <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
                   <li><a class="dropdown-item" href="FAQ.html">FAQ's</a></li>
                 </ul>
               </div>
@@ -56,6 +55,7 @@
         </div>
       </div>
       </div>
+
         <!--coding for slideshow noted at the beginning of the slideshow page-->
         <div class="slideshow">
           <!--Bootstrap Carousel-->
@@ -65,17 +65,21 @@
                 aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
               <!--adds the appropriate images into the slideshow-->
               <div class="carousel-item active">
-                <img src="images/slideimg.png" class="d-block w-100" alt="...">
+                <img src="images/model9.png" class="d-block w-100" alt="first slide">
               </div>
               <div class="carousel-item">
-                <img src="images/slideimg1.png" class="d-block w-100" alt="...">
+                <img src="images/slideimg1.png" class="d-block w-100" alt="second slide">
               </div>
               <div class="carousel-item">
-                <img src="images/slideimg2.png" class="d-block w-100" alt="...">
+                <img src="images/slideimg.png" class="d-block w-100" alt="third slide">
+              </div>
+              <div class="carousel-item">
+                <img src="images/model10.png" class="d-block w-100" alt="fourth slide">
               </div>
             </div>
           </div>
@@ -91,45 +95,85 @@
             <h2 class="tagline__upper tagline__upper-mobile">Creative Inspiring Natural</h2>
             <h1 class="tagline__lower">Enjoy your experience with us</h1>
           </div>
-        
-        <!--creating the button for get in touch on the homepage-->
-        
-          <button class="getintouch-button center"><a href="contact-us.html"><p>Get In Touch</p></a></div>button>
+     
 
+          <button class="getintouch-button center"><a href="contact-us.html"><p>Get In Touch</p></a></button>
+
+          <div class="row-homepage">
+            <div class="homepage-img">
+              <img src="images/festivecover.png" alt="Pink flower" style="width:100%">
+            </div>
+            <div class="homepage-img">
+              <img src="images/slideimg1.png" alt="Girl looking into mirror" style="width:100%">
+            </div>
+            <div class="homepage-img">
+              <img src="images/flowerfield.png" alt="Red flower" style="width:100%">
+            </div>
+          </div>
+          <div class="row-homepage">
+            <div class="homepage-img">
+              <img src="images/contemporarycover.png" alt="Light reflections on girls face" style="width:100%">
+            </div>
+            <div class="homepage-img">
+              <img src="images/pinkflower.png" alt="Orange flower" style="width:100%">
+            </div>
+            <div class="homepage-img">
+              <img src="images/model2.png" alt="controled light on girls face" style="width:100%">
+            </div>
+          </div>
         </div>
 
 
 
 <!--footer html section-->
-        <div class="footer footer--homepage row">
-          <div class="footer__contact_us contactus-footer col">Contact us
-          <div class="footer-option">
-            Phone Number: <a href="tel:+64 276-780-011">+64-276-780-011</a>
-            <br>
-            Email: <a href="mailto:annikamarriner@shcs.school.nz">annikamarriner@shcs.school.nz</a><br>          
-          </div>
-        </div>
+<div class="footer footer--homepage row">
+  <div class="footer__contact_us contactus-footer col">Contact us
+  <div class="footer-option">
+    Phone Number: <a href="tel:+64 276-780-011">+64-276-780-011</a>
+    <br>
+    Email: <a href="mailto:annikamarriner@shcs.school.nz">annikamarriner@shcs.school.nz</a><br>          
+  </div>
+</div>
 
 
-        <div class="footer about-footer col">About 
-          <div class="footer-option">
-            <a href="about-annika.html">About Annika Page</a>
-            <br>
-            <a href="termsconditions.html">Terms & Conditions</a>      
-            <br>
-            <a href="FAQ.html">Frequently asked questions</a>         
-          </div>
-        </div>
+<div class="footer about-footer col">About 
+  <div class="footer-option">
+    <a href="about-annika.html">About Annika Page</a>
+    <br>
+    <a href="termsconditions.html">Terms & Conditions</a>      
+    <br>
+    <a href="FAQ.html">Frequently asked questions</a>         
+  </div>
+</div>
 
 
-    
-        <div class="footer information-footer col">Information
-          <div class="footer-option">
-            <a href="privacypolicy.html">Privacy Policy</a>           
-          </div>
-    
-          </div>
-        </div>
+
+<div class="footer information-footer col">Information
+  <div class="footer-option">
+    <a href="privacypolicy.html">Privacy Policy</a>           
+  </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- JS for VUE and Airtable -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"> </script>
+<!--allows us to display and get data from airtable-->
+<script src="https://cdn.jsdelivr.net/nmp/vue@2.5.13/dist/vue.js"></script>
+<!--allows us to display dynamic data easily-->
+
+<!--Custome JS for VUE -->
+<script src="VUE.js"></script>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+
+</html>
 
       </div>
     </div>

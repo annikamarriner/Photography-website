@@ -49,6 +49,8 @@ html {
   /* overflow: hidden; */
   position: absolute;
   margin:auto;
+  padding-bottom:2vh;
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -56,9 +58,9 @@ html {
   float: center;
   color: #f2f2f2;
   text-align: center;
-  padding: 0 2.9vw;
+  padding: 2vw 6vw;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 2.8vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -104,24 +106,25 @@ dropdown:hover .dropdown-menu {
 
 /* styling for the banner which is the Annika Marriner Photography logo*/
 .banner {
-  display: inline-block;
+  display: inline-block; 
   background-color: #100F10;
-  height: 24vh;
+  height: 25vh;
   width: 100%;
   position: relative;
   background-image: url("images/AMlogotransparent.png");
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-position:center top;
-}
+} 
 
 
 /*styling for navagtion which appears under the banner*/
 .navigation {
-  height: 4.5em;
+  height: 5em;
   width: 100%;
   position: absolute;
   bottom: 0px;
   font-size: 11px;
+  z-index: 100;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -134,16 +137,22 @@ dropdown:hover .dropdown-menu {
 .dropdown{
   display:inline-block;
 }
+
 .dropdown:hover .dropdown-menu{
   display:block;
   background-color:white;
   border-radius:25px;
+  width:13.5vw;
+  /* height:auto; */
+  justify-content: center;
 }
 
 .dropdown-menu .dropdown-item {
   color:black;
   font-family:Arial, Helvetica, sans-serif;
+  font-size:2.5vh;
   border-radius:25px;
+  /* padding:0.2em; */
 }
 
 
@@ -196,12 +205,14 @@ dropdown:hover .dropdown-menu {
 /*creates the styling for the contact third of the footer*/
 .contactus-footer {
   background: black;
-  font-size: 3vh;
+  font-size: 2.5vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top:2vh;
+  margin-top:1vh;
   color:white;
   text-decoration: none;
+  padding-top:2vh;
+  padding-bottom:2vh;
 }
 
 .contactus-footer :link{
@@ -215,12 +226,14 @@ dropdown:hover .dropdown-menu {
 /*creates the styling for the about third of the footer*/
 .about-footer {
   background: black;
-  font-size: 3vh;
+  font-size: 2.5vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 2vh;
+  margin-top: 1vh;
   color:white;
   text-decoration: none;
+  padding-top:2vh;
+  padding-bottom:2vh;
 }
 
 .about-footer a{
@@ -236,12 +249,14 @@ dropdown:hover .dropdown-menu {
 /*creates the styling for the information third of the footer*/
 .information-footer {
   background: black;
-  font-size: 3vh;
+  font-size: 2.5vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 2vh;
+  margin-top: 1vh;
   color:white;
   text-decoration: none;
+  padding-top:2vh;
+  padding-bottom:2vh;
 }
 
 .fa {
@@ -293,9 +308,26 @@ dropdown:hover .dropdown-menu {
 
 /*styling for the content which appears in the middle of pages*/
 .content {
-    height: 70vh;
+    height: auto;
     width: 100%;
     display: inline-block
+}
+
+.row-homepage {
+  display: flex;
+}
+
+.homepage-img {
+  flex: 33.33%;
+  padding: 2.5px;
+  padding:1vw;
+  margin-bottom: 2vh;
+}
+
+.homepage-img img{
+  border-radius:20px;
+  height:40vh;
+  width:35vw;
 }
 
 .tagline__upper{
@@ -314,6 +346,10 @@ dropdown:hover .dropdown-menu {
 }
 
 
+
+
+
+
 /*styles the h1 heading on the homepage*/
 h1{
     font-size:6vh;
@@ -330,7 +366,8 @@ h1{
     font-size:5vh;
     font-family:Arial, Helvetica, sans-serif;
     border-radius:10px;/*curves the edges of the button to fit the design*/
-    margin-top: 15vh;
+    margin-top: 10vh;
+    margin-bottom:5vh;
     border-width:0;
     padding:0.8em 1.5em;
     justify-content:center;/*centers the button on the html page*/    
@@ -454,7 +491,7 @@ h1{
     font-size: 5vh;
     text-align: left;
     color:#E987F5;
-    margin-left: 10vw;
+    margin-left:4vw;
     margin-top: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     /*If required*/
@@ -547,31 +584,37 @@ h1{
 
 
 
-/*css styling for our customers page*/
+/*css styling for testimonial page*/
 /*styling for slideshow which appears in the middle of the our customers*/
-.slideshow-ourcustomers {
+.slideshow-testimonial {
     display: inline-block;
     width: 100%;
 }
 
-.row {
+.row-testimonial {
   display: flex;
 }
 
-.flowerimg {
+.testimonialimg {
   flex: 33.33%;
-  padding: 2px;
-  padding-left:2vw;
-  margin-bottom: 10vh;
+  padding: 2.5px;
+  padding:1vw;
+  margin-bottom: 2vh;
 }
 
-.content-ourcustomers{
+.testimonialimg img{
+  border-radius:20px;
+  height:40vh;
+  width:25vw;
+}
+
+.content-testimonial{
     height: auto;
     width: 100%;
 }
 
 .customer-feedback{
-  height:50vh;
+  height:35vh;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other
@@ -612,14 +655,21 @@ h1{
 
 .heading-text_contactus{
   font-size: 3em;
-  text-align: left;
+  text-align: center;
   color:#E987F5;
-  margin-left: 8vh;
   margin-top: 5vh;
   font-family: Arial, Helvetica, sans-serif;
   /*If required*/
   overflow: hidden
 }
+
+.sub-heading_contactus {
+  font-size: 1.5em;
+  text-align:center;
+  color:rgb(78, 76, 76);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .contactUsForm {
 max-width: 800px;
@@ -627,7 +677,7 @@ font-size: 40px;
 }
 
 .contactUsForm .row {
-padding-bottom: 2em;
+padding-bottom: 3em;
 }
 
 .contactUsForm textarea, .contactUsForm input {
@@ -636,10 +686,16 @@ border: none;
 height:5vh;
 }
 
+.mobileNumber{
+  margin-top:2vh;
+}
+
 .contactUsForm textarea {
 width: 95%;
 height:13vh;
 }
+
+
 
 .contactUsForm input[type="text"] {
 width: 90%;
@@ -650,6 +706,7 @@ background-color: #FDE3FF;
 padding: 0.2em 0.5em;
 float: right;
 margin-right: 10%;
+margin-bottom:5vh;
 width:10vw;
 height:6vh;
 }
@@ -695,7 +752,9 @@ margin-bottom: 50vh;
   }
 
 
-
+.contactusform-image{
+  float:right;
+}
 
 
 /*styling for PRICING PAGE*/
@@ -799,7 +858,7 @@ color:black;
 }
 
 .faq-item__question{
-  background-color:#E987F5;
+  background-color:#d794df;
   padding:1em;
   border-radius:2em;
 }
@@ -813,7 +872,6 @@ color:black;
   padding:1em;
 }
 
-/*styling for the getin touch button which appears on the homepage*/
 .getintouch-faq{
   background-color:#E987F5;
   height:2.3em;
@@ -829,7 +887,6 @@ color:black;
   margin-bottom:5vh;
 }
 
-/*styles for the get in touch button noted on the homepage when the use hovers over it */
 .getintouch-faq :hover{
   color:black;
 }
@@ -844,7 +901,7 @@ font-size:3vh;
 }
 
 
-/* occasions */
+/* galleries.html page styling */
 
 .content-gallery {
   margin: 5vh 5vw;
@@ -864,13 +921,16 @@ font-size:3vh;
 
 .gallery-card {
   max-width: 500px;
-  background: #E987F5;
+  background: #dfb8e4;
   margin: 3em;
   display: inline-block;
+  border-radius:20px;
 }
+
 
 .gallery-card__image img {
   width: 100%;
+  border-radius:20px 20px 0 0;
 }
 
 .gallery-card__title {
@@ -1047,6 +1107,7 @@ font-size:3vh;
       display:inline-block;
     }
     
+
    .getintouch-button{
      padding:0.5em;
      font-size:5vh;
@@ -1058,6 +1119,7 @@ font-size:3vh;
    .getintouch-button a{
      font-size:5vh;
    }
+
 
   /*responsive styling for our work page*/
   .heading-text{
@@ -1242,6 +1304,8 @@ height:auto;
     .getintouch-faq a{
       font-size:1.5vh;
     };
+
+
     
 
   }

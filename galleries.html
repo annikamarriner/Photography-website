@@ -32,21 +32,20 @@
                   Our Work
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="occasions.html">Occasions</a></li>
-                  <li><a class="dropdown-item" href="pets.html">Pets</a></li>
-                  <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
-                  <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+                  <li><a class="dropdown-item" href="galleries.html">Galleries</a></li>
                 </ul>
               </div>
-              <a href="ourcustomers.html">Our Customers</a>
-              <a href="about-annika.html">About Annika</a>
-              <a href="pricing.html">Pricing</a>
+              <a href="testimonials.html">Testimonials</a>
+              
 
-              <div class="dropdown dropdown--ContactUs">
+              <div class="dropdown dropdown--About">
                 <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact Us
+                  About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="about-annika.html">About Annika</a></li>
+                  <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
                   <li><a class="dropdown-item" href="FAQ.html">FAQ's</a></li>
                 </ul>
               </div>
@@ -56,59 +55,53 @@
         </div>
       </div>
       </div>
- <!-- content section html -->
- <div class="text_heading">
-   
-    <div class="heading-text">
-        Our Customers
-       </div>
-       <div class="sub-heading">
-           Our client base reaches a wide range of different people. Here at Annika Marriner <br>
-           Photography our aim is to satisfy every customer with pictures that will last a lifetime. 
-        </div>
-    </div>
-      <!--creating content part of the homepage-->
-      <div class="content-ourcustomers">
-        <div class="slideshow-ourcustomers">
-            <!--Bootstrap Carousel-->
-            <div id="customer-feedback" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#slideshow-ourcustomers" data-bs-slide-to="0" class="active" aria-current="true"
-                  aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#slideshow-ourcustomers" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#slideshow-ourcustomers" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
 
-              <div class="carousel-inner"> -->
-                <!--adds the appropriate images into the slideshow-->
-                <div class="carousel-item active customer-feedback">
-                  <img src="images/slide0.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item customer-feedback">
-                  <img src="images/slide1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item cus">
-                  <img src="images/slide2.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              
+
+      <div class="content-gallery">
+        <h2>View our galleries</h2>
+        
+        <div class="gallery-row">
+          <div class="gallery-card" onclick="goto('/occasions.html')">
+            <div class="gallery-card__image">
+              <img src="images/eventcover.png" max-width="920px" max-height="798px" alt="...">
+            </div>
+            <div class="gallery-card__title">
+              Occasions
             </div>
           </div>
-          <div class="row">
-            <div class="flowerimg">
-              <img src="images/redflower.png" alt="Snow" style="width:100%">
+  
+          <div class="gallery-card" onclick="goto('/nature.html')">
+            <div class="gallery-card__image">
+              <img src="images/birdsonwood.png" max-width="920px" max-height="798px" alt="...">
             </div>
-            <div class="flowerimg">
-              <img src="images/orangeflower.png" alt="Forest" style="width:100%">
-            </div>
-            <div class="flowerimg">
-              <img src="images/pinkflower.png" alt="Mountains" style="width:100%">
+            <div class="gallery-card__title">
+              Nature
             </div>
           </div>
         </div>
 
+        <div class="gallery-row">
+          <div class="gallery-card" onclick="goto('/contemporary.html')">
+            <div class="gallery-card__image">
+              <img src="images/contemporarycover.png" max-width="920px" max-height="798px" alt="...">
+            </div>
+            <div class="gallery-card__title">
+              Contemporary
+            </div>
+          </div>
+  
+          <div class="gallery-card" onclick="goto('/animals.html')">
+            <div class="gallery-card__image">
+              <img src="images/catscover.png" max-width="920px" max-height="798px" alt="...">
+            </div>
+            <div class="gallery-card__title">
+              Animals
+            </div>
+          </div>
+        </div>
+      </div>
 
-
+  
 <!--footer html section-->
 <div class="footer footer--homepage row">
   <div class="footer__contact_us contactus-footer col">Contact us

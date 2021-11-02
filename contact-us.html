@@ -32,21 +32,20 @@
                   Our Work
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="occasions.html">Occasions</a></li>
-                  <li><a class="dropdown-item" href="pets.html">Pets</a></li>
-                  <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
-                  <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+                  <li><a class="dropdown-item" href="galleries.html">Galleries</a></li>
                 </ul>
               </div>
-              <a href="ourcustomers.html">Our Customers</a>
-              <a href="about-annika.html">About Annika</a>
-              <a href="pricing.html">Pricing</a>
+              <a href="testimonials.html">Testimonials</a>
+              
 
-              <div class="dropdown dropdown--ContactUs">
+              <div class="dropdown dropdown--About">
                 <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact Us
+                  About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="about-annika.html">About Annika</a></li>
+                  <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
                   <li><a class="dropdown-item" href="FAQ.html">FAQ's</a></li>
                 </ul>
               </div>
@@ -56,6 +55,7 @@
         </div>
       </div>
       </div>
+
        <!--coding for hero image noted at the beginning of the contact us page-->
        <div class="hero-image">
         <img src="images//hero_image.png" alt="image flower">
@@ -67,32 +67,52 @@
   <div class="content">
     <div class="text_heading_contactus">
       <div class="heading-text_contactus">
-          Contact Us<br>
-          We'd love to hear from you
+          Contact us or make your booking below<br>
+          </div>
+
+      <div class="sub-heading_contactus">
+        After submitting your enquiry you should expect to hear back from us within 48 hours. <br>
+        If you do not receive an email or text from us within this time frame, please submit another enquiry with the header "seond message".
       </div>
+      </div>
+
+      <!--creating the contact us form which allows for communication between users and owner. -->
       <div class="contact-form">
           <form action="contact-us-submit.html">
             <div class="container contactUsForm">
+
               <div class="row">
                 <div class="col">
-                  <label for="contactUsName" class="form-label">Name <span class="required-field">(required)</span></label>
-                  <input id="contactUsName" type="text" />
+                  <label for="contactUsName" class="form-label">Name <span class="required-field">(required field)<input type="text" id="firstNameInput" placeholder="Enter your first name" pattern="[A-Za-z'-]{2,50}" onfocus="this.value=''" required></span>
+                  </label>
+                  <p id="firstNameErrorMessage" class="error-messages"></p>
                 </div>
+
                 <div class="col">
-                  <label for="contactUsEmail" class="form-label">Email address <span class="required-field">(required)</span></label>
-                  <input id="contactUsEmail" type="text" />
+                  <label for="contactUsEmail" class="form-label">Email address <span class="required-field">(required field)<input type="text" id="emailInput" placeholder="Enter your current email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onfocus="this.value=''" required type="submit"></span>
+                  </label>
+                  <p id="emailErrorMessage" class="error-messages"></p>
                 </div>
               </div>
+
               <div class="row">
+
                 <div class="col">
-                  <label for="contactUsPhone" class="form-label">Phone number</label>
+                  <label for="contactUsMobile" class="form-label">Mobile phone number <span class="required-field">(required field) <br><input id="cellInput" type="tel"  placeholder="  e.g 027-786-5555  " pattern="^\d{3}-\d{3}-\d{4}$"  title="Enter your cellphone number" onfocus="this.value=''" required></span>
+                  </label>
+                  <div class="mobileNumber">
+                  <p id="cellErrorMessage" class="error-messages"></p>
+                </div>
+                </div>
+
+                <div class="col">
+                  <label for="contactUsPhone" class="form-label">Phone number </label>
                   <input id="contactUsPhone" type="text" />
                 </div>
-                <div class="col">
-                  <label for="contactUsMobile" class="form-label">Mobile phone number <span class="required-field">(required)</span></label>
-                  <input id="contactUsMobile" type="text" />
-                </div>
+
+                
               </div>
+
               <div class="row">
                 <div class="col-12">
                   <label for="contactUsMessage">Message</label>
@@ -103,12 +123,12 @@
               <div class="row">
                 <div class="col">
                   <span class="contactUsForm__robotCheck">
-                    <input id="contactUsRobot" type="checkbox" />
+                    <input id="contactUsRobot" type="checkbox" class="validationButton" onclick="startOver()">
                     <label for="contactUsRobot">I am not a robot</label>
                   </span>
                 </div>
                 <div class="col">
-                  <input id="contactUsSubmit" type="submit" value="Submit" />
+                  <input id="contactUsSubmit" type="submit" value="Submit"class="validationButton" onclick="checkInputs()">
                 </div>
               </div>
             </div>
