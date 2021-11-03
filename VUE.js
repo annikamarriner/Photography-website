@@ -76,14 +76,16 @@ function myFunction() {
 
 //Javascript to allow for drop down navigation to link to other html pages//
 var ddOurWork = document.querySelector(".dropdown--OurWork");
-ddOurWork.onclick = () => {
-	document.location.href = "ourwork.html";
+  ddOurWork.onclick = () => {
+	  document.location.href = "ourwork.html";
 }
 
 //Javascript to allow for drop down navigation to link to other html pages//
 var ddContactUs = document.querySelector(".dropdown--ContactUs");
-ddContactUs.onclick = () => {
-	document.location.href = "contact-us.html";
+if(ddContactUs) {
+  ddContactUs.onclick = () => {
+	  document.location.href = "contact-us.html";
+  }
 }
 
 
@@ -91,10 +93,10 @@ ddContactUs.onclick = () => {
 function openMobileNav() {
     var topNav = document.querySelector(".topnav");
     if (topNav.className === "topnav") {
-        topNav.classList.add("mobile-nav");  
+        topNav.classList.add("mobile-size");  
   }
     else {
-        topNav.classList.remove("mobile-nav");
+        topNav.classList.remove("mobile-size");
     }
   }
 
@@ -109,7 +111,9 @@ function openMobileNav() {
     }
 }
 
-
+function goto(location){
+  document.location.href = location
+}
 
 
 

@@ -5,6 +5,7 @@
   <!--links to bootstrap in order to include the server in my coding-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +15,14 @@
 
 <body>
   <div class="container-fluid">
-    <div class="app">
       <div class="header">
         <div class="banner">
+          <a href="homepage.html"><img src="images/AMlogotransparent.png"></a>
           <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
           <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
             <i class="fa fa-bars"></i>
           </a>
-
+        </div>
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
@@ -29,10 +30,13 @@
               
               <div class="dropdown dropdown--OurWork">
                 <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
-                  Our Work
+                  Collection
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="galleries.html">Galleries</a></li>
+                  <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
+                  <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+                  <li><a class="dropdown-item" href="animals.html">Animals</a></li>
+                  <li><a class="dropdown-item" href="occasions.html">Occasions</a></li>
                 </ul>
               </div>
               <a href="testimonials.html">Testimonials</a>
@@ -53,20 +57,36 @@
             </div>
           </div>
         </div>
-      </div>
-      </div>
-
 
  <!-- content section html -->
    
     <div class="header-blog">
         Our Blog
        </div>
+
+       <div class="blog-row1">
+        <div class="subheading-blog">
+            Ploy 
+         </div>
+         <p class="blog-text"> 5 September 2021<br> 
+         Ploy wanted professional photographs taken for her modelling portfolio. We had a lot of fun experimenting with gems, glitter and different lighting.</p>
+ 
+         <div class="row-blog">
+           <div class="ployimg">
+             <img src="images/model10.png" alt="Dog next to kennel" style="width:100%">
+           </div>
+           <div class="ployimg">
+             <img src="images/model4.png" alt="Dog in persons arms" style="width:100%">
+           </div>
+           <div class="ployimg">
+             <img src="images/model9.png" alt="Dog with tongue out" style="width:100%">
+           </div>
+         </div>
+       </div>
      
-<div class="blog-row1">
+      <div class="blog-row1">
        <div class="subheading-blog">
            Riley 
-          __________
         </div>
         <p class="blog-text"> 21 July 2021<br> 
         Riley came to live with Annika earlier this month. She is a very active puppy full of mischeif and fun.</p>
@@ -88,8 +108,6 @@
       <div class="blog-row2">
         <div class="subheading-blog">
             Stephanie
-           <br>
-           _________________
          </div>
          <p class="blog-text"> 13 July 2021<br> 
          In June Stephanie celebrated her 60th birthday along with family and friends. Her day was made even more <br>
@@ -111,9 +129,6 @@
 
        <div class="blog-row3">
         <div class="subheading-blog">
-            Lara
-           <br> 
-           _________________
          </div>
          <p class="blog-text"> 3 May 2021<br> 
          After being delayed due to COVID-19 restrictions Lara was finally able to celebrate the completion <br>

@@ -28,7 +28,6 @@ html {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #0f0f0f;
-  /* overflow: hidden; */
   position: absolute;
   margin:auto;
 }
@@ -47,7 +46,6 @@ html {
 .topnav {
   background-color: #0f0f0f;
   /* overflow: hidden; */
-  position: absolute;
   margin:auto;
   padding-bottom:2vh;
   
@@ -93,38 +91,37 @@ dropdown:hover .dropdown-menu {
   display: block;
 }
 
-.dropdown .dropdown-toggle {
- background-color: #0f0f0f;
-}
 
 /*styling for the header which holds the banner and navagtion*/
 .header {
   background-color:#0f0f0f;
   width:  100%;
   display: inline-block;
+  height:25vh;
+  position:relative;
 }
 
 /* styling for the banner which is the Annika Marriner Photography logo*/
 .banner {
-  display: inline-block; 
+  display:flex;
+  justify-content:center;
   background-color: #100F10;
-  height: 25vh;
+  /* height: 25vh; */
   width: 100%;
-  position: relative;
-  background-image: url("images/AMlogotransparent.png");
-  background-repeat: no-repeat; 
-  background-position:center top;
+
 } 
+
 
 
 /*styling for navagtion which appears under the banner*/
 .navigation {
   height: 5em;
   width: 100%;
-  position: absolute;
   bottom: 0px;
   font-size: 11px;
   z-index: 100;
+  position:absolute;
+  background-color:#0f0f0f;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -142,17 +139,15 @@ dropdown:hover .dropdown-menu {
   display:block;
   background-color:white;
   border-radius:25px;
-  width:13.5vw;
-  /* height:auto; */
   justify-content: center;
 }
 
 .dropdown-menu .dropdown-item {
   color:black;
   font-family:Arial, Helvetica, sans-serif;
-  font-size:2.5vh;
+  font-size:2.3vh;
   border-radius:25px;
-  /* padding:0.2em; */
+  padding:0.3em;
 }
 
 
@@ -304,9 +299,10 @@ dropdown:hover .dropdown-menu {
     display: inline-block;
     height: 76vh;
     width: 100%;
+    margin-top:-7px;
 }
 
-/*styling for the content which appears in the middle of pages*/
+/*styling for the content which appears in the middle of homepage*/
 .content {
     height: auto;
     width: 100%;
@@ -492,21 +488,24 @@ h1{
     text-align: left;
     color:#E987F5;
     margin-left:4vw;
-    margin-top: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     /*If required*/
     overflow: hidden
 }
 
 .content-aboutannika{
-    height: 30vh;
     width: 100%;
-    margin-bottom: 90vh;
+    padding-bottom:5em;
+    position:relative;
 }
 
+
 .content-aboutannika img{
+  max-height:622.67px;
+  max-width:892.65px;
   border-radius: 50px;
-  height: 95vh;
+  height: auto;
+  width:auto;
   margin-left: 3vw;
   margin-top: 5vh;
   float: left;
@@ -519,6 +518,12 @@ h1{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.getintouch-about-container{
+  height:15vh;
+  margin-top:8vh;
+  width:100%;
+  position:relative;
+}
 .getintouch-about{
   background-color:#E987F5;
   height: 15vh;
@@ -526,9 +531,10 @@ h1{
   font-size: 5vh;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;/*curves the edges of the button to fit the design*/
-  margin-top:  8vh;
-  margin-right: 5vw;
   border-width: 0;
+  position:absolute;
+  left:50%;
+  transform:translate(-50%, 0);
 }
 
 .getintouch-about h1{
@@ -614,7 +620,7 @@ h1{
 }
 
 .customer-feedback{
-  height:35vh;
+  height:auto;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other
@@ -807,7 +813,7 @@ font-size: 5vh;
 font-family: Arial, Helvetica, sans-serif;
 border-radius: 10px;/*curves the edges of the button to fit the design*/
 margin-top:  8vh;
-margin-right: 5vw;
+margin-right: 15vw;
 border-width: 0;
 }
 
@@ -902,7 +908,7 @@ font-size:3vh;
 
 
 /* galleries.html page styling */
-
+/* 
 .content-gallery {
   margin: 5vh 5vw;
   align-items: center;
@@ -921,25 +927,55 @@ font-size:3vh;
 
 .gallery-card {
   max-width: 500px;
-  background: #dfb8e4;
+  height:100%;
   margin: 3em;
   display: inline-block;
+  position:relative;
+  cursor:pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height:100%;
   border-radius:20px;
 }
 
-
-.gallery-card__image img {
-  width: 100%;
-  border-radius:20px 20px 0 0;
-}
-
 .gallery-card__title {
-  font-size: 28px;
-  font-family:Arial, Helvetica, sans-serif;
-  padding: .5em;
-  height:8vh;
+  padding:.5em;
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  border-radius:20px;
+  display:flex;
+  justify-content:center;
+} 
+.gallery-card__title :hover {
+  padding:.5em;
+  height:20%;
+  width:40%;
+  background-color:rgba(250, 260, 246, 0.3);
+  position:absolute;
+  top:0;
+  border-radius:20px;
+  display:flex;
+  justify-content:center;
 }
 
+.gallery-card__title p:hover{
+  font-size:35px;
+  font-family:Arial, Helvetica, sans-serif;
+  display:flex;
+  align-items:center;
+}
+
+.gallery-button :hover{
+  font-size:35px;
+  font-family:Arial, Helvetica, sans-serif;
+  display:flex;
+  align-items:center;
+}
+ */
 
 /*styling for the contact us submit page*/
 .content-image img{
@@ -1001,6 +1037,14 @@ font-size:3vh;
   margin-left:10vw;
 }
 
+.ployimg {
+  flex: 33.33%;
+  padding: .5px;
+  padding-left:2vw;
+  margin-top:3vh;
+  margin-bottom:5vh;
+}
+
 .dogimg {
   flex: 33.33%;
   padding: .5px;
@@ -1011,8 +1055,8 @@ font-size:3vh;
 
 .row-blog .dogimg{
   height:auto;
-  
 }
+
 
 .stephimg {
   flex: 33.33%;
@@ -1034,15 +1078,22 @@ font-size:3vh;
 
 
 
+
+
+
+
+
+
+
+
+
+
   @media only screen and (max-width: 768px){
     /*responsive styling for navigation*/
     .topnav > a, .topnav > .dropdown {
       display: none;
     }
-    .navigation {
-      display:none;
-    }
-
+  
     .banner {
       height:142px;
     }
@@ -1218,33 +1269,33 @@ font-size:3vh;
 }
 
 .content-aboutannika{
-  height: 30vh;
+  height: auto;
   width: 100%;
   margin-bottom: 90vh;
 }
 
 .content-aboutannika img{
-border-radius: 50px;
-height: 45vh;
-margin-left: 25vw;
-margin-top: 2vh;
+  border-radius: 50px;
+  width:80%;
+  margin-left:10%;
+  margin-top:2vh;
 }
 
 .about_text {
-font-size: 3vw;
-padding-top: 50vh;
-margin-left:20vw;
-font-family: Arial, Helvetica, sans-serif;
+  width:100%;
+  font-size: 3vw;
+  margin-left:20vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .getintouch-about{
-background-color:#E987F5;
-padding:1em;
-font-size:2vh;
-width:60vw;
-margin-top:3em;
-height:auto;
+  background-color:#E987F5;
+  padding:1em;
+  font-size:2vh;
+  width:60vw;
+  margin-top:3em;
+  height:auto;
 }
 
 .getintouch-about a{

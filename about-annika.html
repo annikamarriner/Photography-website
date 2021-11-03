@@ -5,6 +5,7 @@
   <!--links to bootstrap in order to include the server in my coding-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +15,14 @@
 
 <body>
   <div class="container-fluid">
-    <div class="app">
       <div class="header">
         <div class="banner">
+          <a href="homepage.html"><img src="images/AMlogotransparent.png"></a>
           <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
           <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
             <i class="fa fa-bars"></i>
           </a>
-
+        </div>
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
@@ -29,10 +30,13 @@
               
               <div class="dropdown dropdown--OurWork">
                 <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
-                  Our Work
+                  Collection
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="galleries.html">Galleries</a></li>
+                  <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
+                  <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+                  <li><a class="dropdown-item" href="animals.html">Animals</a></li>
+                  <li><a class="dropdown-item" href="occasions.html">Occasions</a></li>
                 </ul>
               </div>
               <a href="testimonials.html">Testimonials</a>
@@ -53,22 +57,12 @@
             </div>
           </div>
         </div>
-      </div>
-      </div>
-
 
       
         <!-- content section html -->
-<div class="text_heading">
-   
-        <div class="headingtext-aboutannika">
-            About Annika
-           </div>
-
-
-<div class="content-aboutannika">
+        <div class="content-aboutannika">
+<div class="text_heading headingtext-aboutannika">About Annika</div>
     <img src="images/aboutannika.png" alt="image of Annika">
-
     <div class="about_text">
         Annika was first introduced to photography at <br>
         an early age when she was gifted a camera for <br>
@@ -86,15 +80,12 @@
         and capture their special moments. She has won  <br>
         multiple awards for her work and continues to<br>
         grow and push herself as a photographer.<br>
-
+      </div>
+      <div class="getintouch-about-container">
         <button class="getintouch-about"><a href="contact-us.html"><h1>Get In Touch</h1></a></button>
     </div>
-
-
- 
-
+      </div>
 </div>
-
 <!--footer html section-->
 <div class="footer footer--homepage row">
   <div class="footer__contact_us contactus-footer col">Contact us
