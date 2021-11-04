@@ -26,9 +26,8 @@
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
-              <a href="homepage.html">Home</a>
-              
-              <div class="dropdown dropdown--OurWork">
+              <div class="nav-item"><a href="homepage.html">Home</a></div>
+              <div class="nav-item dropdown dropdown--OurWork">
                 <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
                   Collection
                 </a>
@@ -36,13 +35,13 @@
                   <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
                   <li><a class="dropdown-item" href="nature.html">Nature</a></li>
                   <li><a class="dropdown-item" href="animals.html">Animals</a></li>
-                  <li><a class="dropdown-item" href="occasions.html">Occasions</a></li>
+                  <li><a class="dropdown-item" href="people.html">People</a></li>
                 </ul>
               </div>
-              <a href="testimonials.html">Testimonials</a>
+              <div class="nav-item"><a href="testimonials.html">Testimonials</a></div>
               
 
-              <div class="dropdown dropdown--About">
+              <div class="nav-item dropdown dropdown--About">
                 <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
@@ -53,58 +52,75 @@
                   <li><a class="dropdown-item" href="FAQ.html">FAQ's</a></li>
                 </ul>
               </div>
-              <a href="ourblog.html">Our Blog</a>
+              <div class="nav-item"><a href="ourblog.html">Our Blog</a></div>
             </div>
           </div>
         </div>
 
+
 <div class="content-FAQ">
-  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <h2 class="faq-title">
+    Frequently Asked Questions</h2>
 
-  <div class="faq-item">
-    <div class="faq-item__question">
-      <h4>What type of photography do you take?</h4>
+    <div class="faq-item">
+      <div class="faq-item__question">
+        <h4>What type of photography do you take?</h4>
+        <a class="icon" data-for="1">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="faq-item__answer hidden" data-is="1">
+        <p>My work is described as original and natural. I am particularly interested in gel photography. I also enjoy taking photos of families, pets and flora.</p>
+      </div>
     </div>
-    <div class="faq-item__answer">
-      <p>My work is described as original and natural. I am particularly interested in gel photography. I also enjoy taking photos of families, pets and flora.</p>
-    </div>
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-item__question">
-      <h4>Where will the session be held?</h4>
+    <div class="faq-item">
+      <div class="faq-item__question">
+        <h4>Where will the session be held?</h4>
+        <a class="icon" data-for="2">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="faq-item__answer hidden" data-is="2">
+        <p>We can either hold the session at my studios or you may choose the perfect location of your choice. My aim is to make you feel comfortable so your photos look natural for years to come.</p>
+      </div>
     </div>
-    <div class="faq-item__answer">
-      <p>We can either hold the session at my studios or you may choose the perfect location of your choice. My aim is to make you feel comfortable so your photos look natural for years to come.</p>
-    </div>
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-item__question">
-      <h4>What is i dont buy any photos?</h4>
+    <div class="faq-item">
+      <div class="faq-item__question">
+        <h4>What is i dont buy any photos?</h4>
+        <a class="icon" data-for="3">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="faq-item__answer hidden" data-is="3">
+        <p>There is no obligation to purchase your photos and there is no minimum order size.</p>
+      </div>
     </div>
-    <div class="faq-item__answer">
-      <p>There is no obligation to purchase your photos and there is no minimum order size.</p>
-    </div>
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-item__question">
-      <h4>Can i get digital and hard copy images?</h4>
+    <div class="faq-item">
+      <div class="faq-item__question">
+        <h4>Can i get digital and hard copy images?</h4>
+        <a class="icon" data-for="4">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="faq-item__answer hidden" data-is="4">
+        <p>Once we have taken your photos you will receive a number of thumbnails to choose from. These thumbnails will be delivered to your electronically. Once you have decided which photos you would like
+          to purcahse just contact us and place your photo. It's that easy.</p>
+      </div>
     </div>
-    <div class="faq-item__answer">
-      <p>Once we have taken your photos you will receive a number of thumbnails to choose from. These thumbnails will be delivered to your electronically. Once you have decided which photos you would like
-        to purcahse just contact us and place your photo. It's that easy.
-      </p>
-    </div>
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-item__question">
-      <h4>What should I wear?</h4>
-    </div>
-    <div class="faq-item__answer">
-      <p>Be yourself, be comfortable and wear a smile.</p>
+    <div class="faq-item">
+      <div class="faq-item__question">
+        <h4>What should I wear?</h4>
+        <a class="icon" data-for="5">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="faq-item__answer hidden" data-is="5">
+        <p>Be yourself, be comfortable and wear a smile.</p>
+      </div>
     </div>
   </div>
 
@@ -154,7 +170,7 @@
 <!--allows us to display dynamic data easily-->
 
 <!--Custome JS for VUE -->
-<script src="VUE.js"></script>
+<script src="mainVUE.js"></script>
 
 </div>
 

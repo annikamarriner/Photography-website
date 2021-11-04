@@ -26,9 +26,8 @@
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
-              <a href="homepage.html">Home</a>
-              
-              <div class="dropdown dropdown--OurWork">
+              <div class="nav-item"><a href="homepage.html">Home</a></div>
+              <div class="nav-item dropdown dropdown--OurWork">
                 <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
                   Collection
                 </a>
@@ -36,13 +35,13 @@
                   <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
                   <li><a class="dropdown-item" href="nature.html">Nature</a></li>
                   <li><a class="dropdown-item" href="animals.html">Animals</a></li>
-                  <li><a class="dropdown-item" href="occasions.html">Occasions</a></li>
+                  <li><a class="dropdown-item" href="people.html">People</a></li>
                 </ul>
               </div>
-              <a href="testimonials.html">Testimonials</a>
+              <div class="nav-item"><a href="testimonials.html">Testimonials</a></div>
               
 
-              <div class="dropdown dropdown--About">
+              <div class="nav-item dropdown dropdown--About">
                 <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
@@ -53,14 +52,14 @@
                   <li><a class="dropdown-item" href="FAQ.html">FAQ's</a></li>
                 </ul>
               </div>
-              <a href="ourblog.html">Our Blog</a>
+              <div class="nav-item"><a href="ourblog.html">Our Blog</a></div>
             </div>
           </div>
         </div>
 
        <!--coding for hero image noted at the beginning of the contact us page-->
        <div class="hero-image">
-        <img src="images//hero_image.png" alt="image flower">
+        <img src="images//hero_image.JPG" alt="image flower">
     </div>
   </div>
 <!-- No spaces
@@ -74,16 +73,67 @@
 
       <div class="sub-heading_contactus">
         After submitting your enquiry you should expect to hear back from us within 48 hours to discuss your photography requirements. <br>
+        <br>
         If you are wishing to make a booking please title the form "booking"<br>
-        If you do not receive an email or text from us within this time frame, please submit another enquiry with the header "seond message".
       </div>
-      </div>
+  </div>
 
 
 
 
       <!--creating the contact us form which allows for communication between users and owner. -->
-      <div class="contact-form">
+      <!-- <div class="contact-form"> -->
+
+        <div class="contactus-form">
+          <form action="contact-us-submit.html">
+            <div class="contactus-form__form">
+
+              <div class="contactus-form_input contactus-form_input--name">
+                 <input type="text" id="firstNameInput" placeholder="Enter your first name  *required" pattern="[A-Za-z'-]{2,50}" onfocus="this.value=''" required>
+              </div>
+              <div class="contactus-form_input contactus-form_input--name">
+                <input type="text" id="lastNameInput" placeholder="Enter your last name *required" pattern="[A-Za-z'-]{2,50}" onfocus="this.value=''" required>
+             </div>
+              <div class="contactus-form_input">
+                <input type="text" id="emailInput" placeholder="Enter your current email *required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onfocus="this.value=''" required type="submit">
+              </div>
+          
+              <div class="contactus-form_input">
+                <input id="cellInput" type="tel"  placeholder="  e.g 027-786-5555  *required" pattern="^\d{3}-\d{3}-\d{4}$"  title="Enter your cellphone number" onfocus="this.value=''" required>
+              </div>
+              <div class="contactus-form_input">
+                <input id="contactUsPhone" type="text" placeholder=" Enter your phone number *optional"/>
+              </div>
+
+              <div class="contactus-form_input contactus-form_input--message">
+                <textarea id="contactUsMessage" placeholder="Leave your message here  *optional"></textarea>
+              </div>
+
+            </div>
+
+            <div class="contactus-form_img">
+              <img src="images/model6.png">
+            </div>
+
+            <div class="contactus-form_submit">
+              <div class="contactus-form_submit-container">
+                <div>
+                <input id="contactUsSubmit" type="submit" value="Submit"class="validationButton" onclick="checkInputs()">
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+     
+          
+
+
+
+
+<!-- 
+        </div>
           <form action="contact-us-submit.html">
             <div class="container contactUsForm">
 
@@ -141,7 +191,7 @@
           </form>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <!--footer html section-->
 <div class="footer footer--homepage row">
@@ -184,7 +234,7 @@
 <!--allows us to display dynamic data easily-->
 
 <!--Custome JS for VUE -->
-<script src="VUE.js"></script>
+<script src="mainVUE.js"></script>
 
 </div>
 
