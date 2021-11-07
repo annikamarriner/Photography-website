@@ -24,19 +24,9 @@ html {
 
 
 
-/*styling for Navigation Bar*/
-/* Add a black background color to the top navigation */
-
-.banner a .fa {
-  width: auto;
-  padding: 10px;
-}
-
-.banner .icon {
-  display: none;
-} 
 
 /*styling for Navigation Bar*/
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #0f0f0f;
@@ -88,9 +78,21 @@ html {
 }
 
 /* creates the styling for the drop down of Our Work in the Nav Bar*/
-dropdown:hover .dropdown-menu {
-  display: block;
+
+.dropdown-menu-wrapper {
+  display: flex;
+  justify-content: center;
 }
+
+
+.dropdown:hover .dropdown-menu{
+  display:block;
+  background-color:white;
+  border-radius:25px;
+  justify-content: center;
+  width: 60%; 
+}
+
 
 
 
@@ -108,11 +110,14 @@ dropdown:hover .dropdown-menu {
   display:flex;
   justify-content:center;
   background-color: #100F10;
-  /* height: 25vh; */
-  width: 100%;
-
+  height: 142px;
+  width:100%;
 } 
 
+.banner img{
+  height:100%;
+  width:90%
+}
 
 
 /*styling for navagtion which appears under the banner*/
@@ -165,35 +170,35 @@ dropdown:hover .dropdown-menu {
 
 .footer-homepage {
   height: 17vh;
-  background: black;
+  background: #292929;
 }
 
 .footer-ourcustomers{
     height: 17vh;
-    background:black;
+    background:#292929;
 }
 
 .footer-ourwork{
     height: 17vh;
-    background:black;
+    background:#292929;
     margin-top: 30vh;
 }
 
 .footer-aboutannika{
   height: 17vh;
-  background:black;
+  background:#292929;
   margin-top: 60vh;
 }
 
 .footer-contactus{
   height: 17vh;
-  background:black;
+  background:#292929;
   margin-top: 70vh;
 }
 
 .footer-contactsubmit{
   height:17vh;
-  background:black;
+  background:#292929;
   margin-top:0;
 }
 
@@ -316,22 +321,21 @@ dropdown:hover .dropdown-menu {
 }
 
 .homepage-img {
-  flex: 33.33%;
-  padding: 2.5px;
-  padding:1vw;
+  padding: 20px;
+  justify-content: center;
   margin-bottom: 2vh;
 }
 
 .homepage-img img{
   border-radius:20px;
-  height:40vh;
-  width:35vw;
+  height:50vh;
+  width:3vw;
 }
 
 .tagline__upper{
   font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-    margin-top:7vh;
+  text-align:center;
+  margin-top:7vh;
 }
 
 .tagline__upper-desktop{
@@ -354,6 +358,11 @@ h1{
     font-family:Arial, Helvetica, sans-serif;
     text-align:center;/*centeres this heading on the homepage*/
     margin-top:2vh;
+}
+
+.slideshow-images {
+    display: inline-block;
+    width: 100%;
 }
 
 /*styling for the getin touch button which appears on the homepage*/
@@ -387,7 +396,10 @@ h1{
 
 
 
-  /*Our Collection styling*/
+
+
+
+  /*Portfolio page styling*/
 
   /*this section appears at the top of the majority of pages*/
     /*Our Work page styling*/
@@ -555,6 +567,12 @@ h1{
 
 
 /*css styling for gallery pages within photos*/
+/* 
+.card-columns{
+  height:20vh;
+}
+
+
 .row-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -562,7 +580,7 @@ h1{
 }
 
 /* Create four equal columns that sits next to each other */
-.column-gallery {
+/* .column-gallery {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -572,23 +590,26 @@ h1{
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-}
+} */
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .column-gallery {
     flex: 50%;
     max-width: 50%;
   }
-}
+} */ 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .column-gallery {
     flex: 100%;
     max-width: 100%;
   }
 }
+ */
+
 
 
 
@@ -597,6 +618,20 @@ h1{
 .slideshow-testimonial {
     display: inline-block;
     width: 100%;
+}
+
+.customer-feedback{
+  height:23em;
+  background:#FDE3FF;
+  margin-top:3vh;
+}
+
+.customerfeedback_text{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:3.3vh;
+  color:#0f0f0f;
+  text-align:center;
+  padding-top:3.5vh;
 }
 
 .row-testimonial {
@@ -621,18 +656,6 @@ h1{
     width: 100%;
 }
 
-.customer-feedback{
-  height:auto;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other
-@media screen and (max-width: 200px) {
-  .column {
-    width: 100%;
-  }
-}
-
- */
 
 
 
@@ -906,6 +929,8 @@ color:black;
   justify-content:center!important;
 }
 
+
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -930,7 +955,7 @@ color:black;
   background-color:#d794df;
   padding:1em;
   border-radius:2em;
-  position: relative; /* <-- ADD THIS LINE */
+  position: relative; 
 }
 
 .faq-item__question h4{
@@ -942,7 +967,6 @@ color:black;
   padding:1em;
 }
 
-/* vvv NEW CSS vvv */
 
 .hidden {
   display: none;
@@ -960,48 +984,30 @@ color:black;
   padding: 0;
 }
 
-/* 
 .faq-title{
   font-size:32px;
   margin:2vh 10vw;
   color:#E987F5;
 }
 
-.faq-item{
-  margin:3vh 10vw;
+.pricinglink{
+  font-family:Arial, Helvetica, sans-serif;
+  color:black;
+  text-decoration:none;
 }
-
-.faq-item p{
-  font-size:18px;
-}
-
-.faq-item__question{
-  background-color:#d794df;
-  padding:1em;
-  border-radius:2em;
-}
-
-.faq-item__question h4{
-  font-size:24px;
-  color:white;
-}
-
-.faq-item__answer{
-  padding:1em;
-} */
 
 .getintouch-faq{
   background-color:#E987F5;
-  height:2.3em;
   width:8em;
+  height:2.4em;
   font-size:5vh;
   font-family:Arial, Helvetica, sans-serif;
   border-radius:10px;/*curves the edges of the button to fit the design*/
-  margin-top: 5vh;
+  margin-top: 2vh;
   border-width:0;
   padding:0.8em 1.5em;
   justify-content:center;/*centers the button on the html page*/  
-  margin-left:35vw;  
+  margin-left:37vw; 
   margin-bottom:5vh;
 }
 
@@ -1019,11 +1025,22 @@ font-size:3vh;
 }
 
 
+
+
+
+
+
+
 /*styling for the contact us submit page*/
 .content-image img{
   height:70vh;
   width:100%;
 }
+
+
+
+
+
 
 /*styling for the terms and condition page*/
 
@@ -1043,6 +1060,11 @@ font-size:3vh;
   font-size:2.5vh;
   margin-top:2vh;
 }
+
+
+
+
+
 
 /*styling for our blog page*/
 .header-blog{
@@ -1152,6 +1174,9 @@ font-size:3vh;
     .topnav.mobile-size{
       display:block;
     }
+
+
+
     /*responsive styling for footer*/
    .footer .col{
     flex: 1 1 100%;
@@ -1178,6 +1203,8 @@ font-size:3vh;
     flex: 1 1 100%;
     margin: 0;
   }
+
+
 
   /*responsive styling for homepage*/
     .slideshow{
@@ -1217,6 +1244,9 @@ font-size:3vh;
    .homepage-img img{
      height:auto;
    }
+
+
+
 
   /*responsive styling for our work page*/
   .heading-text{
@@ -1280,6 +1310,9 @@ font-size:3vh;
       margin:0
     }
   
+
+
+
   /*responsive styling for testimonial page*/
   .customer-feedback {
     height: auto;
@@ -1288,6 +1321,9 @@ font-size:3vh;
 .testimonialimg img{
   height:auto;
 }
+
+
+
 
 /*responsive styling for about annika page*/
 .headingtext-aboutannika{
@@ -1298,7 +1334,7 @@ font-size:3vh;
   margin-top: 5vh;
   font-family: Arial, Helvetica, sans-serif;
   /*If required*/
-  overflow: hidden
+  overflow: hidden;
 }
 
 .content-aboutannika{
@@ -1311,29 +1347,24 @@ font-size:3vh;
   width:80%;
   margin-left:10%;
   margin-top:2vh;
+  vertical-align: top;
 }
 
 .about_text {
   font-size: 3vw;
   margin-left:10vw;
-  margin-bottom:20vh;
+  /* margin-bottom:20vh; */
+  display:inline-block;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .getintouch-about{
-  background-color:#E987F5;
-  padding:1em;
-  font-size:2vh;
-  width:40vw;
-  margin-top:3em;
-  height:auto;
-  margin-left:2vw;
+  display:none;
 }
 
-.getintouch-about a{
-  font-size:1.5vh;
-}
+
+
 
 /*responsive styling for contact us page*/
 .hero-image{
@@ -1344,7 +1375,6 @@ font-size:3vh;
 .hero-image img{
   height: 30vh;
   width: 100%;
-
 }
 
 .text_heading_contactus{
@@ -1385,6 +1415,8 @@ font-size:3vh;
 
 
 
+
+
   /*responsive styling for pricing page*/
   .content-pricing img{
     border-radius: 50px;
@@ -1412,14 +1444,17 @@ font-size:3vh;
     }
 
 
-  /*responsive stlying for faq page*/
+
+
+  /* responsive stlying for faq page */
   .getintouch-faq{
     background-color:#E987F5;
     padding:1em;
     font-size:2vh;
     width:60vw;
-    margin-top:3em;
+    margin-left:20vw;
     height:auto;
+    justify-content: center;
     }
     
     .getintouch-faq a{

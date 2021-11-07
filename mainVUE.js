@@ -20,16 +20,15 @@ function myFunction() {
 
 
 //Javascript to allow for drop down navigation to link to other html pages//
-var ddOurWork = document.querySelector(".dropdown--OurWork");
+var ddOurWork = document.querySelector(".dropdown--Portfolio");
   ddOurWork.onclick = () => {
-	  document.location.href = "ourwork.html";
+	  
 }
 
 //Javascript to allow for drop down navigation to link to other html pages//
-var ddContactUs = document.querySelector(".dropdown--ContactUs");
-if(ddContactUs) {
-  ddContactUs.onclick = () => {
-	  document.location.href = "contact-us.html";
+var ddAbout = document.querySelector(".dropdown--About");
+if(ddAbout) {
+  ddAbout.onclick = () => {
   }
 }
 
@@ -98,14 +97,6 @@ let emailError = false;
 let validationButton = false;
 
 
-//hiding all except starting div
-selectPickupDelivery.classList.remove('hidden');
-enterDetails.classList.add('hidden');
-menu.classList.add('hidden');
-document.getElementById('confirmOrder').classList.add('hidden');
-document.getElementById('cancelOrder').classList.add('hidden');
-
-
 
 // --VALIDATION CHECKS FOR INPUTS--
 
@@ -128,6 +119,26 @@ function checkFirstName() {
         firstNameInput.classList.remove('invalid');
         firstNameError = false;
     }
+}
+
+function checkLastName() {
+  //if name pattern is incorrect or nothing is entered
+  if (lastNameInput.validity.patternMismatch || lastNameInput.validity.valueMissing) {
+      //give alerts and make lastNameError true and add invalid class for styling purposes.
+      alert('Please enter a valid last name')
+      lastNameErrorMessage.textContent = "Please enter a last name between 2 and 50 characters with letters only.";
+      lastNameInput.classList.add('invalid');
+      lastNameError = true;
+      return;
+  }
+  else {
+      //set lastName to what has been entered
+      lastName = lastNameInput.value;
+      //clear any values and css for the error display
+      lastNameErrorMessage.textContent = '';
+      lastNameInput.classList.remove('invalid');
+      lastNameError = false;
+  }
 }
 
 //checks the cellphone input

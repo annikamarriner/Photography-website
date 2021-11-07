@@ -17,7 +17,7 @@
   <div class="container-fluid">
       <div class="header">
         <div class="banner">
-          <a href="homepage.html"><img src="images/AMlogotransparent.png"></a>
+          <a href="index.html"><img src="images/AMlogotransparent.png"></a>
           <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
           <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
             <i class="fa fa-bars"></i>
@@ -26,10 +26,11 @@
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
-              <div class="nav-item"><a href="homepage.html">Home</a></div>
-              <div class="nav-item dropdown dropdown--OurWork">
-                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
-                  Collection
+              <div class="nav-item"><a href="index.html">Home</a></div>
+
+              <div class="nav-item dropdown dropdown--Portfolio">
+                <a class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolios
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
@@ -42,7 +43,7 @@
               
 
               <div class="nav-item dropdown dropdown--About">
-                <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -56,6 +57,7 @@
             </div>
           </div>
         </div>
+
 
  <!-- content section html -->
  <div class="text_heading">
@@ -80,17 +82,41 @@
                 <button type="button" data-bs-target="#slideshow-ourcustomers" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
 
-              <div class="carousel-inner"> -->
+              <div class="carousel-inner"> 
                 <!--adds the appropriate images into the slideshow-->
                 <div class="carousel-item active customer-feedback">
-                  <img src="images/slide0.png" class="d-block w-100" alt="...">
+                  <h1 class="customerfeedback_text">
+                    “I really enjoyed my photoshoot with Annika. Initially I <br>
+                    was unsure about having my photo taken but Annika <br>
+                    made sure that my experience was fun and relaxing.<br>
+                    Thank you so much Annika!”<br>
+                    <br>
+                    - Stephanie </h1>
                 </div>
+
                 <div class="carousel-item customer-feedback">
-                  <img src="images/slide1.png" class="d-block w-100" alt="...">
+                  <h1 class="customerfeedback_text">
+                    “Annika captured some lovely photos of my puppy <br>
+                    which I cherish. I highly recommend this service. I <br>
+                    will definitely be returning for more photoshoots in <br>
+                    the future.”<br>
+                    <br>
+                    -John
+                    
                 </div>
-                <div class="carousel-item cus">
-                  <img src="images/slide2.png" class="d-block w-100" alt="...">
+
+                <div class="carousel-item customer-feedback">
+                  <h1 class="customerfeedback_text">
+                    “I used Annika Marriner photography to have photo’s<br>
+                    taken off my grand children. Although my grandchildren <br>
+                    now live overseas I have beautiful photos of them sitting <br>
+                    in my living room that I can look at each day to remember<br>
+                    they’re cheeky grins.”<br>
+                    <br>
+                    -Paula<br>
+
                 </div>
+
               </div>
               
             </div>

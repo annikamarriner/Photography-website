@@ -3,8 +3,7 @@
 
 <head>
   <!--links to bootstrap in order to include the server in my coding-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,7 @@
   <div class="container-fluid">
       <div class="header">
         <div class="banner">
-          <a href="homepage.html"><img src="images/AMlogotransparent.png"></a>
+          <a href="index.html"><img src="images/AMlogotransparent.png"></a>
           <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
           <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
             <i class="fa fa-bars"></i>
@@ -26,10 +25,11 @@
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
-              <div class="nav-item"><a href="homepage.html">Home</a></div>
-              <div class="nav-item dropdown dropdown--OurWork">
-                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
-                  Collection
+              <div class="nav-item"><a href="index.html">Home</a></div>
+
+              <div class="nav-item dropdown dropdown--Portfolio">
+                <a class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolios
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
@@ -42,7 +42,7 @@
               
 
               <div class="nav-item dropdown dropdown--About">
-                <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -57,20 +57,6 @@
           </div>
         </div>
 
-        <div class="container gallery-div">
-          <div id="app">
-            <div class="card-columns">
-              <!--use VUE from loop to get all the items from the database and make a card for each one, you can add a bootstrap class and it will apply to all, thus making it more effient-->
-              <div v-for="item in items" class="card border-0">
-
-                <img :src="item['fields']['ImageURL'][0]['url']" :alt="item['fields']['AltText']"
-                :title="item['fields']['AltText']" class="card-img-top mt-1">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       
           <div class="heading-text">
@@ -80,7 +66,31 @@
             Some examples of our contemporary photography work is seen within the gallery below. 
           </div>
 
-       
+          <div class="container gallery-div">
+            <div id="app">
+              <div class="card-columns">
+                <!--use VUE from loop to get all the items from the database and make a card for each one, you can add a bootstrap class and it will apply to all, thus making it more effient-->
+                <div v-for="item in items" class="card border-0" data-toggle="modal" :data-target="item['fields']['recordID']">
+
+                  <img :src="item['fields']['ImageURL'][0]['url']" :alt="item['fields']['AltText']"
+                  :title="item['fields']['AltText']" class="card-img-top mt-1">
+
+                  <div class="modal fade" :id="item['fields']['recordIDModal']" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body w-100">
+                          <img :src="item['fields']['ImageURL'][1]['url']" :alt="item['fields']['Alt']" :title="item['fields']['AltText']" class="w-100">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <!-- <div class="row-gallery">
         <div class="column-gallery">
           <img src="images/model0.png">
@@ -126,9 +136,7 @@
 <div class="footer about-footer col">About 
   <div class="footer-option">
     <a href="about-annika.html">About Annika Page</a>
-    <br>
-    <a href="termsconditions.html">Terms & Conditions</a>      
-    <br>
+   <br>
     <a href="FAQ.html">Frequently asked questions</a>         
   </div>
 </div>
@@ -137,7 +145,10 @@
 
 <div class="footer information-footer col">Information
   <div class="footer-option">
-    <a href="privacypolicy.html">Privacy Policy</a>           
+    <a href="privacypolicy.html">Privacy Policy</a>      
+    <br>
+    <a href="termsconditions.html">Terms & Conditions</a>      
+    <br>     
   </div>
 
   </div>
@@ -145,25 +156,21 @@
 
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-<!-- JS for Bootstrap
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+</div>
 
+  <!-- JS for Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
-<!-- JS for VUE and Airtable -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"> </script>
-<!--allows us to display and get data from airtable-->
-<script src="https://cdn.jsdelivr.net/nmp/vue@2.5.13/dist/vue.js"></script>
-<!--allows us to display dynamic data easily-->
+  <!-- JS for VUE and Airtable -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 
 <!--Custom JS for VUE -->
 <script src="gallery_vue.js"></script>
-
-</div>
-
-
+<script src="mainVUE.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@
   <div class="container-fluid">
       <div class="header">
         <div class="banner">
-          <a href="homepage.html"><img src="images/AMlogotransparent.png"></a>
+          <a href="index.html"><img src="images/AMlogotransparent.png"></a>
           <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
           <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
             <i class="fa fa-bars"></i>
@@ -26,10 +26,11 @@
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
-              <div class="nav-item"><a href="homepage.html">Home</a></div>
-              <div class="nav-item dropdown dropdown--OurWork">
-                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
-                  Collection
+              <div class="nav-item"><a href="index.html">Home</a></div>
+
+              <div class="nav-item dropdown dropdown--Portfolio">
+                <a class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolios
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
@@ -42,7 +43,7 @@
               
 
               <div class="nav-item dropdown dropdown--About">
-                <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -59,6 +60,9 @@
 
 
 <div class="content-FAQ">
+  <div class="hero-image">
+    <img src="images/womaningrass.png" alt="woman standing in the gardens">
+</div>
   <h2 class="faq-title">
     Frequently Asked Questions</h2>
 
@@ -88,7 +92,7 @@
 
     <div class="faq-item">
       <div class="faq-item__question">
-        <h4>What is i dont buy any photos?</h4>
+        <h4>What if I don't buy any photos?</h4>
         <a class="icon" data-for="3">
           <i class="fa fa-plus"></i>
         </a>
@@ -122,9 +126,33 @@
         <p>Be yourself, be comfortable and wear a smile.</p>
       </div>
     </div>
+
+    <div class="faq-item">
+      <div class="faq-item__question">
+        <h4>How long will the session be?</h4>
+        <a class="icon" data-for="6">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="faq-item__answer hidden" data-is="6">
+        <p>Sessions can range any time between 1 to 2 and a half hours. Times depend on your requirements and location of the shoot</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-item__question">
+        <h4>How much does an average photoshoot cost?</h4>
+        <a class="icon" data-for="7">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="faq-item__answer hidden" data-is="7">
+        <p>Prices differ according to your requirements. Details are avaliable on our <a href="#pricing.html">pricing page</a></p>
+      </div>
+    </div>
   </div>
 
-  <button class="getintouch-faq"><a href="contact-us.html"><p>Get In Touch</p></a></button>
+  <button class="getintouch-faq"><a class="pricinglink" href="contact-us.html"><p>Get In Touch</p></a></button>
   </div>
 
 

@@ -17,7 +17,7 @@
   <div class="container-fluid">
       <div class="header">
         <div class="banner">
-          <a href="homepage.html"><img src="images/AMlogotransparent.png"></a>
+          <a href="index.html"><img src="images/AMlogotransparent.png"></a>
           <!--adding "burger" navigation for mobile devices --- ensuring responsiveness -->
           <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
             <i class="fa fa-bars"></i>
@@ -26,10 +26,11 @@
           <!--creating Navigation bar and linking them to appropriate pages-->
           <div class="navigation">
             <div class="topnav">
-              <div class="nav-item"><a href="homepage.html">Home</a></div>
-              <div class="nav-item dropdown dropdown--OurWork">
-                <a href="ourwork.html" class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
-                  Collection
+              <div class="nav-item"><a href="index.html">Home</a></div>
+
+              <div class="nav-item dropdown dropdown--Portfolio">
+                <a class="dropdown-toggle" id="dd" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolios
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
@@ -42,7 +43,7 @@
               
 
               <div class="nav-item dropdown dropdown--About">
-                <a href="contact-us.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -56,6 +57,7 @@
             </div>
           </div>
         </div>
+
 
        <!--coding for hero image noted at the beginning of the contact us page-->
        <div class="hero-image">
@@ -127,71 +129,7 @@
         </div>
       </div>
      
-          
-
-
-
-
-<!-- 
-        </div>
-          <form action="contact-us-submit.html">
-            <div class="container contactUsForm">
-
-              <div class="row">
-                <div class="col">
-                  <label for="contactUsName" class="form-label">Name <span class="required-field">(required field)<input type="text" id="firstNameInput" placeholder="Enter your first name" pattern="[A-Za-z'-]{2,50}" onfocus="this.value=''" required></span>
-                  </label>
-                  <p id="firstNameErrorMessage" class="error-messages"></p>
-                </div>
-
-                <div class="col">
-                  <label for="contactUsEmail" class="form-label">Email address <span class="required-field">(required field)<input type="text" id="emailInput" placeholder="Enter your current email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onfocus="this.value=''" required type="submit"></span>
-                  </label>
-                  <p id="emailErrorMessage" class="error-messages"></p>
-                </div>
-              </div>
-
-              <div class="row">
-
-                <div class="col">
-                  <label for="contactUsMobile" class="form-label">Mobile phone number <span class="required-field">(required field) <br><input id="cellInput" type="tel"  placeholder="  e.g 027-786-5555  " pattern="^\d{3}-\d{3}-\d{4}$"  title="Enter your cellphone number" onfocus="this.value=''" required></span>
-                  </label>
-                  <div class="mobileNumber">
-                  <p id="cellErrorMessage" class="error-messages"></p>
-                </div>
-                </div>
-
-                <div class="col">
-                  <label for="contactUsPhone" class="form-label">Phone number </label>
-                  <input id="contactUsPhone" type="text" />
-                </div>
-
-                
-              </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <label for="contactUsMessage">Message</label>
-                  <textarea id="contactUsMessage"></textarea>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <span class="contactUsForm__robotCheck">
-                    <input id="contactUsRobot" type="checkbox" class="validationButton" onclick="startOver()">
-                    <label for="contactUsRobot">I am not a robot</label>
-                  </span>
-                </div>
-                <div class="col">
-                  <input id="contactUsSubmit" type="submit" value="Submit"class="validationButton" onclick="checkInputs()">
-                </div>
-              </div>
-            </div>
-          </form>
-      </div>
-    </div>
-  </div> -->
+        
 
 <!--footer html section-->
 <div class="footer footer--homepage row">
